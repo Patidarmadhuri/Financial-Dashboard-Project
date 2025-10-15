@@ -16,6 +16,13 @@ This Flask API:
 
 ---
 
+## Prerequisites
+- Install Python: [python.org](https://www.python.org)
+- Install Node.js: [nodejs.org](https://nodejs.org)
+- Install MongoDB Compass: [mongodb.com](https://www.mongodb.com/try/download/compass)
+
+---
+
 ## ⚙️ Setup Instructions
 
 ### Step 1: Install dependencies
