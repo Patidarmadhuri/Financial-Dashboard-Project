@@ -14,15 +14,17 @@ The **frontend** of the Financial Dashboard is built with **React** and **Plotly
 ---
 
 ## 🗂️ Folder Structure
-
+```plaintext
 frontend/
+│
 ├── src/
-│ ├── components/
-│ │ └── DashboardChart.js # Core chart component
-│ ├── App.js # Main React app
-│ └── index.js # Entry point
-├── package.json # Project dependencies
-└── README.md # Frontend setup guide
+│   ├── components/
+│   │   └── DashboardChart.js  # Core chart component
+│   ├── App.js                # Main app
+│   └── index.js             # Entry point
+│
+├── package.json             # Dependencies
+└── README.md                # # Frontend setup guide
 
 yaml
 Copy code
@@ -75,6 +77,9 @@ Integrate filters (e.g., by year, region, or metric)
 Display API errors or “no data” messages more clearly
 
 Add UI for adding or updating charts without using Postman
+
+💬 Feedback
+Ask questions or suggest ideas in Issues!
 
 Made with ❤️ by Madhuri Patidar
 💬 “Always learning, building, and sharing.”
