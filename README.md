@@ -34,7 +34,6 @@ Data analysts can update metrics via APIs, and the dashboard automatically refle
 
 ## Prerequisites
 - Install Python: [python.org](https://www.python.org)
-- Install Node.js: [nodejs.org](https://nodejs.org)
 - Install MongoDB Compass: [mongodb.com](https://www.mongodb.com/try/download/compass)
 
 ---
@@ -150,5 +149,6 @@ Made with ❤️ by Madhuri Patidar
 📄 License
 
 MIT License © 2025 Madhuri Patidar
+
 
 
