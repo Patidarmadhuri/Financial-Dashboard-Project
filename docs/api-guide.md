@@ -9,7 +9,6 @@ You can test all endpoints using **Postman**, **cURL**, or any HTTP client.
 
 http://localhost:5000
 
-ruby
 Copy code
 
 All API routes start with `/api`.
