@@ -16,13 +16,6 @@ This Flask API:
 
 ---
 
-## Prerequisites
-- Install Python: [python.org](https://www.python.org)
-- Install Node.js: [nodejs.org](https://nodejs.org)
-- Install MongoDB Compass: [mongodb.com](https://www.mongodb.com/try/download/compass)
-
----
-
 ## ⚙️ Setup Instructions
 
 ### Step 1: Install dependencies
@@ -35,6 +28,11 @@ Copy code
 python app.py
 Your backend will run at:
 👉 http://localhost:5000
+
+## 🚀 Features
+- API with Create, Read, Update, Delete (CRUD)
+- Connects to MongoDB
+- Tested with Postman
 
 🗂️ Folder Structure
 
@@ -83,7 +81,7 @@ json
 Copy code
 {
   "data": [4, 5, 8],
-  "layout": { "title": "ja Test" }
+  "layout": { "title": "Ja Test" }
 }
 DELETE
 URL: http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
@@ -94,5 +92,8 @@ Connect to MongoDB Atlas for cloud hosting
 
 Tools
 Flask, Flask-CORS, PyMongo
+
+💬 Feedback
+Ask questions in Issues!
 
 Made with ❤️ by Madhuri Patidar
