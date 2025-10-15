@@ -1,6 +1,6 @@
 # 💹 Financial Dashboard Project
 
-![Dashboard Screenshot](docs/screenshots/dashboard-preview.png)
+![Dashboard Screenshot](docs/screenshots/)
 
 An **interactive financial dashboard** that visualizes data from **MongoDB** using **React (frontend)**, **Flask (backend)**, and **Plotly.js (charts)**.  
 Built for developers, analysts, and non-technical users to easily view and understand financial metrics.
@@ -142,4 +142,5 @@ Madhuri Patidar
 💬 “Always learning, building, and sharing.”
 
 📄 License
+
 MIT License © 2025 Madhuri Patidar
