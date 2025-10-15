@@ -69,8 +69,7 @@ Display API errors or “no data” messages more clearly
 
 Add UI for adding or updating charts without Postman
 
-Maintained by:
-👩‍💻 Madhuri Patidar
+Made with ❤️ by Madhuri Patidar
 💬 “Always learning, building, and sharing.”
 
 
