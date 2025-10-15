@@ -142,12 +142,13 @@ Comment or open GitHub Issues for suggestions
 Use the docs/ folder for visuals and sample data
 
 
-👩‍💻 Author
-Madhuri Patidar
+👩‍💻 Author Madhuri Patidar
+Made with ❤️ by Madhuri Patidar
 💼 Full Stack Developer (Java | React | Python | MongoDB)
 💬 “Always learning, building, and sharing.”
 
 📄 License
 
 MIT License © 2025 Madhuri Patidar
+
 
