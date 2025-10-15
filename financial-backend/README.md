@@ -85,7 +85,7 @@ URL: http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
 Add authentication and API key access
 Connect to MongoDB Atlas for cloud hosting
 
+Tools
+Flask, Flask-CORS, PyMongo
 
-Maintained by:
-👩‍💻 Madhuri Patidar
-💬 “Always learning, building, and sharing.”
+Made with ❤️ by Madhuri Patidar
