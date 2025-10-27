@@ -22,9 +22,16 @@ The guide helps teams understand how user actions in the frontend map to backend
 - [🧭 Financial Dashboard API Guide](#-financial-dashboard-api-guide)
     - [📘 Overview](#-overview)
   - [📖 Table of Contents](#-table-of-contents)
+    - [🔗 Links](#-links)
   - [🗃️ Base URL](#️-base-url)
   - [📌 Endpoints Overview](#-endpoints-overview)
-    - [🔗 Links](#-links)
+    - [🔗 Links](#-links-1)
+
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [Backend README](../financial-backend/README.md)
 
 
 ## 🗃️ Base URL
