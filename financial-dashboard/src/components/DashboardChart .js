@@ -1,27 +1,109 @@
-import React, { useState, useEffect } from "react";
-import Plot from "react-plotly.js";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Plot from 'react-plotly.js';
 
+const DashboardChart = () => {
+  const [token, setToken] = useState(localStorage.getItem('token') || '');
+  const [dashboardData, setDashboardData] = useState(null);
+  const [error, setError] = useState(null);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
-   const DashboardChart  = () => {
-  const [plotData, setPlotData] = useState(null);
+  // Handle login
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        username,
+        password,
+      });
+      const { token } = response.data;
+      setToken(token);
+      localStorage.setItem('token', token);
+      setError(null);
+      await fetchDashboard();
+    } catch (err) {
+      setError(err.response?.data?.error || 'Login failed');
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    useEffect(() => {
-    fetch("http://localhost:5000/api/dashboard")
-      .then((res) => res.json())
-      .then((data) => setPlotData(data))
-      .catch((err) => console.error("Error fetching dashboard:", err));
-  }, []);
+  // Fetch dashboard data
+  const fetchDashboard = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get('http://localhost:5000/api/dashboard', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      setDashboardData(response.data);
+      setError(null);
+    } catch (err) {
+      setError(err.response?.data?.msg || 'Failed to fetch dashboard');
+    } finally {
+      setLoading(false);
+    }
+  };
 
-  if (!plotData) return <p>Loading dashboard...</p>;
+  // Fetch dashboard on mount if token exists
+  useEffect(() => {
+    if (token) {
+      fetchDashboard();
+    }
+  }, [token]);
 
   return (
-    <Plot
-      data={plotData.data}
-      layout={plotData.layout}
-      config={{ responsive: true }}
-      style={{ width: "100%", height: "100%" }}
-    />
+    <div>
+      {!token ? (
+        <form onSubmit={handleLogin}>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit" disabled={loading}>
+            {loading ? 'Logging in...' : 'Login'}
+          </button>
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+        </form>
+      ) : (
+        <div>
+          {loading && <p>Loading dashboard...</p>}
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+          {dashboardData && (
+            <Plot
+              data={dashboardData.data}
+              layout={{
+                ...dashboardData.layout,
+                width: 1200,
+                height: 600,
+              }}
+            />
+          )}
+          <button
+            onClick={() => {
+              setToken('');
+              localStorage.removeItem('token');
+              setDashboardData(null);
+            }}
+          >
+            Logout
+          </button>
+        </div>
+      )}
+    </div>
   );
-}
+};
 
-export default DashboardChart ;
+export default DashboardChart;

@@ -1,0 +1,3 @@
+financial-backend/.env
+financial-backend/venv/
+frontend/node_modules/

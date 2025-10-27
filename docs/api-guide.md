@@ -1,141 +1,195 @@
+
+#### 3. API Guide (`docs/api-guide.md`)
+
+This file details the API endpoints, includes analyst-friendly tips, and links back to the main and backend READMEs.
+
+```markdown
 # 🧭 Financial Dashboard API Guide
 
-This guide explains how to use the Flask backend API of the Financial Dashboard.  
-You can test all endpoints using **Postman**, **cURL**, or any HTTP client.
+<image-card alt="Flask" src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" ></image-card>
+<image-card alt="MongoDB" src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" ></image-card>
+<image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
 
----
+This guide details the Flask backend API for the **Financial Dashboard Project**. Test endpoints using **Postman**, **cURL**, or any HTTP client. All endpoints use the base URL `http://localhost:5000/api`.
+
+## 📖 Table of Contents
+
+- [Base URL](#base-url)
+- [Endpoints Overview](#endpoints-overview)
+- [Authentication Endpoints](#authentication-endpoints)
+- [Dashboard Endpoints](#dashboard-endpoints)
+- [Tips for Analysts](#tips-for-analysts)
+- [Maintainer](#maintainer)
 
 ## 🗃️ Base URL
 
-http://localhost:5000
+`http://localhost:5000`
 
-Copy code
-
-All API routes start with `/api`.
-
----
+Use **HTTP** for local development to avoid SSL errors. For HTTPS, see [Security Considerations](../financial-backend/README.md#security-considerations).
 
 ## 📌 Endpoints Overview
 
-| Method | Endpoint | Description |
-|:--------|:-----------|:-------------|
-| **GET** | `/api/dashboard` | Fetch the latest dashboard data (used by React frontend) |
-| **GET** | `/api/dashboards` | Fetch all dashboards (for testing or analytics) |
-| **POST** | `/api/dashboard/` | Create a new dashboard entry |
-| **PUT** | `/api/dashboard/<ObjectId>` | Update a specific dashboard document |
-| **DELETE** | `/api/dashboard/<ObjectId>` | Delete a specific dashboard document |
+| Method | Endpoint                     | Description                          | Authorization |
+|--------|------------------------------|--------------------------------------|---------------|
+| POST   | `/api/register`              | Register a new user                 | ❌ No         |
+| POST   | `/api/login`                 | Authenticate and get JWT token      | ❌ No         |
+| GET    | `/api/dashboard`             | Fetch latest dashboard data         | ✅ Yes        |
+| GET    | `/api/dashboards`            | Fetch all dashboard documents       | ✅ Yes        |
+| POST   | `/api/dashboard/`            | Create a new dashboard entry        | ✅ Yes        |
+| PUT    | `/api/dashboard/<doc_id>`    | Update a dashboard by ObjectId      | ✅ Yes        |
+| DELETE | `/api/dashboard/<doc_id>`    | Delete a dashboard by ObjectId      | ✅ Yes        |
 
----
+**Authorization Header** (for protected endpoints):
+```plaintext
+Authorization: Bearer <token-from-/api/login>
 
-## 🧪 1️⃣ Create Dashboard (POST)
+🔐 Authentication Endpoints
+POST /api/register
+Register a new user in the users collection.
 
-**URL:**  
-http://localhost:5000/api/dashboard/
-
-css
-Copy code
-
-**Body (JSON):**
-```json
-{
-  "data": [1, 2, 3],
-  "layout": { "title": "Test" }
-}
-Response:
-
-json
-Copy code
-{
-  "message": "Dashboard data created successfully"
-}
-🔍 2️⃣ View Dashboard (GET)
-URL:
-
-bash
-Copy code
-http://localhost:5000/api/dashboard
-Response:
-
-json
-Copy code
-{
-  "data": [1, 2, 3],
-  "layout": { "title": "Test" }
-}
-🔄 3️⃣ Update Dashboard (PUT)
-URL:
-
-bash
-Copy code
-http://localhost:5000/api/dashboard/<ObjectId>
-Example:
-
-bash
-Copy code
-http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
+URL: http://localhost:5000/api/register
 Body (JSON):
-
-json
-Copy code
-{
-  "data": [4, 5, 8],
-  "layout": { "title": "Updated Test" }
+json{
+  "username": "testuser8",
+  "password": "securepassword1238"
 }
-Response:
 
-json
-Copy code
-{
-  "message": "Dashboard data updated successfully"
+Response (201):
+json{"message": "User registered successfully"}
+
+
+POST /api/login
+Authenticate a user and receive a JWT token.
+
+URL: http://localhost:5000/api/login
+Body (JSON):
+json{
+  "username": "testuser8",
+  "password": "securepassword1238"
 }
-❌ 4️⃣ Delete Dashboard (DELETE)
-URL:
 
-bash
-Copy code
-http://localhost:5000/api/dashboard/<ObjectId>
-Example:
+Response (200):
+json{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."}
 
-bash
-Copy code
-http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
-Response:
 
-json
-Copy code
-{
-  "message": "Dashboard data deleted successfully"
+📊 Dashboard Endpoints
+GET /api/dashboard
+Fetch the latest dashboard data for the React frontend.
+
+URL: http://localhost:5000/api/dashboard
+Headers: Authorization: Bearer <token>
+Response (200):
+json{
+  "data": [
+    {
+      "type": "scatter",
+      "name": "AAPL_CCP",
+      "x": ["2018-12-31T00:00:00", "2019-03-31T00:00:00"],
+      "y": [86427, 80092],
+      "mode": "lines",
+      "line": { "color": "#1f77b4" }
+    }
+  ],
+  "layout": {
+    "title": { "text": "CCP and LTD by Company" }
+  }
 }
-🧩 5️⃣ View All Dashboards (GET)
-URL:
 
-bash
-Copy code
-http://localhost:5000/api/dashboards
-Response Example:
 
-json
-Copy code
-[
+GET /api/dashboards
+Fetch all dashboard documents for testing or analytics.
+
+URL: http://localhost:5000/api/dashboards
+Headers: Authorization: Bearer <token>
+Response (200):
+json[
   {
-    "data": [1, 2, 3],
-    "layout": { "title": "Test" }
-  },
-  {
-    "data": [4, 5, 6],
-    "layout": { "title": "Q2 Report" }
+    "_id": "68ff3101b43928f7b6dfadaa",
+    "data": [
+      {
+        "type": "scatter",
+        "name": "TEST_CCP",
+        "x": ["2023-12-31T00:00:00"],
+        "y": [50000],
+        "mode": "lines",
+        "line": { "color": "#FF0000" }
+      }
+    ],
+    "layout": { "title": { "text": "Test Dashboard" } }
   }
 ]
+
+
+POST /api/dashboard/
+Create a new dashboard entry in the metrics collection.
+
+URL: http://localhost:5000/api/dashboard/
+Headers: Authorization: Bearer <token>
+Body (JSON):
+json{
+  "data": [
+    {
+      "type": "scatter",
+      "name": "TEST_CCP",
+      "x": ["2023-12-31T00:00:00"],
+      "y": [50000],
+      "mode": "lines",
+      "line": { "color": "#FF0000" }
+    }
+  ],
+  "layout": { "title": { "text": "Test Dashboard" } }
+}
+
+Response (201):
+json{"message": "Dashboard data created successfully"}
+
+
+PUT /api/dashboard/<doc_id>
+Update a dashboard entry by ObjectId.
+
+URL: http://localhost:5000/api/dashboard/68ff3101b43928f7b6dfadaa
+Headers: Authorization: Bearer <token>
+Body (JSON):
+json{
+  "data": [
+    {
+      "type": "scatter",
+      "name": "TEST_CCP_UPDATED",
+      "x": ["2023-12-31T00:00:00"],
+      "y": [60000],
+      "mode": "lines",
+      "line": { "color": "#00FF00" }
+    }
+  ],
+  "layout": { "title": { "text": "Updated Dashboard" } }
+}
+
+Response (200):
+json{"message": "Dashboard data updated successfully"}
+
+
+DELETE /api/dashboard/<doc_id>
+Delete a dashboard entry by ObjectId.
+
+URL: http://localhost:5000/api/dashboard/68ff3101b43928f7b6dfadaa
+Headers: Authorization: Bearer <token>
+Response (200):
+json{"message": "Dashboard data deleted successfully"}
+
+
 🧠 Tips for Analysts
-You can import this API collection into Postman and run tests directly.
 
-Only one dashboard (the latest) is shown on the React frontend.
+Use http://localhost:5000 for local testing to avoid SSL errors.
+Import the API collection into Postman for easy testing.
+Use /api/dashboards to verify all metrics entries.
+Only the latest dashboard is shown on the frontend (/api/dashboard).
+Use MongoDB Compass to inspect the Financial_dashboard database.
+Test with testuser8/securepassword1238 for quick setup.
 
-You can use /api/dashboards to verify all entries in the database.
-
-MongoDB Compass can also visualize your data locally.
-
-Maintained by:
-👩‍💻 Madhuri Patidar
+👩‍💻 Maintainer
+Madhuri Patidar
+💬 “Building tools to make financial insights accessible!”
+📧 madhuri.patidar49@gmail.com
+🔗 LinkedIn
 📅 Updated: October 2025
-💬 “Always learning, building, and sharing.”
+🔗 Main README | Backend README

@@ -1,91 +1,148 @@
 
-# 🐍 Financial Dashboard – Backend (Flask API)
+#### 2. Backend README (`financial-backend/README.md`)
 
-The **backend** of the Financial Dashboard is a RESTful API built with **Flask** and connected to a **local MongoDB** database.  
-It handles all CRUD operations for dashboard data that the React frontend visualizes.
+This file covers the Flask backend, includes ToC links, and references the API Guide for detailed endpoints.
 
----
+```markdown
+# 💻 Financial Dashboard Backend
 
-## 🧠 Overview
+<image-card alt="Flask" src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" ></image-card>
+<image-card alt="MongoDB" src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" ></image-card>
+<image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
 
-This Flask API:
-- Connects to a local MongoDB instance via PyMongo
-- Exposes endpoints for Create, Read, Update, Delete
-- Supports CORS for React frontend access
-- Returns JSON data suitable for Plotly charts
+This is the Flask backend for the **Financial Dashboard Project**, providing a RESTful API to manage financial data in MongoDB. It handles JWT authentication and CRUD operations for dashboard metrics, accessible via Postman.
 
----
+## 📖 Table of Contents
 
-## ⚙️ Setup Instructions
+- [Purpose](#purpose)
+- [Tech Stack](#tech-stack)
+- [Directory Structure](#directory-structure)
+- [Setup Instructions](#setup-instructions)
+- [API Reference](#api-reference)
+- [Security Considerations](#security-considerations)
+- [Contributing](#contributing)
 
-### Step 1: Install dependencies
-```bash
-cd backend
-pip install -r requirements.txt
-Step 2: Run the Flask server
-bash
-Copy code
-python app.py
-Your backend will run at:
-👉 http://localhost:5000
+## 🎯 Purpose
 
-🗂️ Folder Structure
+The backend manages user authentication and financial metrics (e.g., CCP, LTD) for the Financial Dashboard, serving Plotly-compatible JSON to the React frontend.
 
-Copy code
-backend/
-│
-├── app.py                # Main Flask API
-├── requirements.txt      # Backend dependencies
-└── README.md
-🗃️ MongoDB Setup
-Make sure MongoDB Compass or MongoDB service is running locally:
+## 🛠️ Tech Stack
 
+| Component       | Technology                     |
+|-----------------|--------------------------------|
+| **Backend**     | Flask, Flask-JWT-Extended, Flask-Bcrypt, Flask-CORS |
+| **Database**    | MongoDB (local)                |
+| **Tools**       | Postman, MongoDB Compass       |
+| **Environment** | Python (3.8+)                  |
 
-Copy code
-mongodb://localhost:27017
-Database: Finacial_dashboard
-Collection: metrics
+## 📂 Directory Structure
 
-🔗 API Endpoints
-Method	Endpoint	Description
-GET	/api/dashboard	Fetch latest dashboard document
-GET	/api/dashboards	Fetch all dashboard documents
-POST	/api/dashboard/	Add new dashboard data
-PUT	/api/dashboard/<id>	Update dashboard by ObjectId
-DELETE	/api/dashboard/<id>	Delete dashboard by ObjectId
+```plaintext
+financial-backend/
+├── app.py                   # Flask API logic
+├── .env                     # JWT secret key
+├── requirements.txt         # Python dependencies
+├── venv/                    # Virtual environment
+├── README.md                # This file
 
-🧪 Example (Postman)
-POST
-URL: http://localhost:5000/api/dashboard/
-Body (JSON):
+🚀 Setup Instructions
+Prerequisites
+Python (3.8+): Download
+MongoDB: Download
+Postman: Download (optional)
 
-json
-Copy code
+Setup
+1. Navigate to financial-backend/:
+bashcd financial-backend
+
+2. Create and activate a virtual environment:
+bash python -m venv venv
+source venv/bin/activate  # macOS/Linux
+.\venv\Scripts\activate   # Windows
+
+3. Install dependencies:
+bash pip install -r requirements.txt
+
+4. Create .env with JWT_SECRET_KEY:
+bash python -c "import secrets; print(secrets.token_hex(32))"
+
+Example .env:
+JWT_SECRET_KEY=your_secret_key_here
+
+5. Ensure MongoDB is running at mongodb://localhost:27017.
+
+6. Run the server:
+bash python app.py
+➡️ Runs at: http://localhost:5000
+
+Note: Use http://localhost:5000 for local development to avoid SSL errors. For HTTPS, see Security Considerations.
+
+🔗 API Reference
+See the API Guide for detailed endpoints, payloads, and Postman examples. Key endpoints:
+
+POST /api/register, POST /api/login: Authentication (no JWT required).
+GET /api/dashboard, GET /api/dashboards, POST /api/dashboard/, PUT/DELETE /api/dashboard/<doc_id>: Manage dashboard data (requires Authorization: Bearer <token>).
+
+## Authentication Endpoints
+
+### POST /api/register
+**Description**: Register a new user.
+**Payload**:
+```json
 {
-  "data": [1, 2, 3],
-  "layout": { "title": "Test" }
+  "username": "string",
+  "password": "string"
 }
-GET
-URL: http://localhost:5000/api/dashboard
+Response:
 
-PUT
-URL: http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
-Body (JSON):
+201: {"message": "User registered"}
+400: {"error": "User already exists"}
 
-json
-Copy code
-{
-  "data": [4, 5, 8],
-  "layout": { "title": "ja Test" }
+POST /api/login
+Description: Authenticate user and return JWT.
+Payload:
+json{
+  "username": "string",
+  "password": "string"
 }
-DELETE
-URL: http://localhost:5000/api/dashboard/68ee8cba52f5400824de5d5c
-
-🧭 Future Enhancements
-Add authentication and API key access
-Connect to MongoDB Atlas for cloud hosting
+Response:
+200: {"access_token": "<jwt_token>"}
+401: {"error": "Invalid credentials"}
 
 
-Maintained by:
-👩‍💻 Madhuri Patidar
-💬 “Always learning, building, and sharing.”
+🔒 Security Considerations
+
+Local Development:
+ Use http://localhost:5000 to avoid SSL errors.
+ .env excluded via .gitignore.
+ MongoDB runs without authentication.
+
+
+Production:
+ Enable HTTPS:
+  bash pip install pyOpenSSL
+  openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
+  Update app.py: app.run(ssl_context=('cert.pem', 'key.pem'))
+ Enable MongoDB authentication.
+ Use flask-limiter for rate limiting.
+
+
+
+🤝 Contributing
+
+1. Fork: https://github.com/Patidarmadhuri/Financial-Dashboard-Project
+
+2. Create branch:
+bash git checkout -b feature/backend-your-feature
+
+3. Commit and push:
+bash git commit -m "Add backend feature"
+git push origin feature/backend-your-feature
+
+4. Open a Pull Request.
+
+Standards:
+Code Style: PEP 8 for Python
+Issues: Use GitHub Issues
+
+🔗 Main README | API Guide
