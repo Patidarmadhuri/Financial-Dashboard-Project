@@ -10,7 +10,13 @@ This file details the API endpoints, includes analyst-friendly tips, and links b
 <image-card alt="MongoDB" src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" ></image-card>
 <image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
 
-This guide details the Flask backend API for the **Financial Dashboard Project**. Test endpoints using **Postman**, **cURL**, or any HTTP client. All endpoints use the base URL `http://localhost:5000/api`.
+### 📘 Overview
+
+The **API Guide** provides a clear reference for the Flask backend of the Financial Dashboard Project. It details endpoints, authentication, and data formats so analysts and developers can easily integrate, test, and manage dashboard metrics. All endpoints use the base URL `http://localhost:5000/api` for local development.
+
+The guide helps teams understand how user actions in the frontend map to backend calls, and ensures secure, accurate access to financial KPIs like **CCP** and **LTD**.
+
+--- 
 
 ## 📖 Table of Contents
 
@@ -20,6 +26,8 @@ This guide details the Flask backend API for the **Financial Dashboard Project**
 - [Dashboard Endpoints](#dashboard-endpoints)
 - [Tips for Analysts](#tips-for-analysts)
 - [Maintainer](#maintainer)
+- [Links](#-links)
+
 
 ## 🗃️ Base URL
 
@@ -193,3 +201,9 @@ Madhuri Patidar
 🔗 LinkedIn
 📅 Updated: October 2025
 🔗 Main README | Backend README
+
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [Backend README](../financial-backend/README.md)

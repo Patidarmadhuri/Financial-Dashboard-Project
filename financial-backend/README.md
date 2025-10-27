@@ -1,5 +1,5 @@
 
-#### 2. Backend README (`financial-backend/README.md`)
+#### Backend README (`financial-backend/README.md`)
 
 This file covers the Flask backend, includes ToC links, and references the API Guide for detailed endpoints.
 
@@ -10,7 +10,11 @@ This file covers the Flask backend, includes ToC links, and references the API G
 <image-card alt="MongoDB" src="https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb" ></image-card>
 <image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
 
-This is the Flask backend for the **Financial Dashboard Project**, providing a RESTful API to manage financial data in MongoDB. It handles JWT authentication and CRUD operations for dashboard metrics, accessible via Postman.
+### 📘 Overview
+
+Finance teams need a secure and reliable backend to manage and serve financial metrics. The **Flask backend** provides RESTful APIs to store, retrieve, and authenticate users’ dashboard data efficiently. It supports JWT authentication and CRUD operations for metrics, powering the interactive frontend dashboards.
+
+---
 
 ## 📖 Table of Contents
 
@@ -21,6 +25,12 @@ This is the Flask backend for the **Financial Dashboard Project**, providing a R
 - [API Reference](#api-reference)
 - [Security Considerations](#security-considerations)
 - [Contributing](#contributing)
+- [Links](#-links)
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [API Guide](../docs/api-guide.md)
 
 ## 🎯 Purpose
 
@@ -146,3 +156,8 @@ Code Style: PEP 8 for Python
 Issues: Use GitHub Issues
 
 🔗 Main README | API Guide
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [API Guide](../docs/api-guide.md)

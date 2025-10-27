@@ -3,15 +3,31 @@
 <image-card alt="React" src="https://img.shields.io/badge/Frontend-React-blue?logo=react" ></image-card>
 <image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
 
-This is the React frontend for the **Financial Dashboard Project**, rendering interactive financial charts using Plotly.js and handling user authentication for visualizing KPIs like Cash and Cash Equivalents (CCP) and Long-Term Debt (LTD) for companies like AAPL, AMZN, and KO.
+---
+
+### 📘 Overview
+
+Visualizing financial metrics efficiently can be challenging for teams. The **React frontend** provides a clean, responsive interface for logging in, fetching data from the Flask backend, and rendering interactive charts with Plotly.js. It enables users to track KPIs such as **Cash & Cash Equivalents (CCP)** and **Long-Term Debt (LTD)** for companies like **AAPL**, **AMZN**, and **KO**, making financial insights accessible at a glance.
+
+---
 
 ## 📖 Table of Contents
 
 - [🌐 Financial Dashboard Frontend](#-financial-dashboard-frontend)
+    - [📘 Overview](#-overview)
   - [📖 Table of Contents](#-table-of-contents)
+    - [🔗 Links](#-links)
   - [🎯 Purpose](#-purpose)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [📂 Directory Structure](#-directory-structure)
+    - [🔗 Links](#-links-1)
+  
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [Backend README](../financial-backend/README.md)  
+- [API Guide](../docs/api-guide.md)
 
 ## 🎯 Purpose
 
@@ -90,3 +106,9 @@ Issues: Use GitHub Issues
 Screenshots: Add to ../docs/screenshots/
 
 🔗 Main README | API Guide
+
+### 🔗 Links
+
+- [Main README](../README.md)  
+- [Backend README](../financial-backend/README.md)  
+- [API Guide](../docs/api-guide.md)
