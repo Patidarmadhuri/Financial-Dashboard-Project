@@ -1,4 +1,4 @@
-# 💹 Financial Dashboard Project
+# 💹 Financial Dashboard Project                         🌐 [Live Demo](https://your-deployment-link.com) (Coming soon)
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Flask](https://img.shields.io/badge/Backend-Flask-black?logo=flask)
@@ -6,7 +6,21 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-A modern **financial analytics dashboard** built with **React**, **Flask**, and **MongoDB**, designed to help teams visualize and track company performance using interactive charts and KPIs like **Cash & Cash Equivalents (CCP)** and **Long-Term Debt (LTD)** for companies such as **AAPL**, **AMZN**, and **KO**.
+### 📘 Overview
+
+Finance teams often struggle to turn raw company data into clear, actionable insights. The **Financial Dashboard Project** was built to solve that problem by transforming scattered financial metrics into interactive visuals and real-time KPIs. Through intuitive charts and secure authentication, it helps teams track performance, analyze trends, and make informed decisions with confidence.  
+
+Built with **React**, **Flask**, and **MongoDB**, this modern dashboard combines powerful backend logic with a clean, responsive frontend for a seamless user experience. It empowers users to monitor company performance with clarity and precision through interactive charts and KPIs such as **Cash & Cash Equivalents (CCP)** and **Long-Term Debt (LTD)** for companies like **AAPL**, **AMZN**, and **KO**.
+
+---
+
+### 🔗 Related Documentation
+
+- 🧠 [Backend README](financial-backend/README.md)
+- 💻 [Frontend README](financial-dashboard/README.md)
+- 📄 [API Guide](docs/api-guide.md)
+
+---
 
 ## 📖 Table of Contents
 
@@ -121,7 +135,7 @@ bashpython app.py
 
 Note: Use http://localhost:5000 for local development to avoid SSL errors. For HTTPS, see Security Notes.
 
-🔗 Backend README - Financial-Dashboard-Project\financial-backend\README.md
+🔗 [Backend README](financial-backend/README.md)  
 
 
 💻 Frontend Setup (React)
@@ -136,7 +150,7 @@ bash npm install
 bash npm start
 ➡️ Runs at: http://localhost:3000
 
-🔗 Frontend README-Financial-Dashboard-Project\financial-dashboard\README.md
+🔗 [Frontend README](financial-dashboard/README.md)
 
 
 🗄️ Database Setup (MongoDB)
