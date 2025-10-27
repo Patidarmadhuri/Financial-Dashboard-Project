@@ -1,9 +1,8 @@
 
-#### 3. API Guide (`docs/api-guide.md`)
+####  API Guide (`docs/api-guide.md`)
 
 This file details the API endpoints, includes analyst-friendly tips, and links back to the main and backend READMEs.
 
-```markdown
 # 🧭 Financial Dashboard API Guide
 
 <image-card alt="Flask" src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" ></image-card>
@@ -20,13 +19,12 @@ The guide helps teams understand how user actions in the frontend map to backend
 
 ## 📖 Table of Contents
 
-- [Base URL](#base-url)
-- [Endpoints Overview](#endpoints-overview)
-- [Authentication Endpoints](#authentication-endpoints)
-- [Dashboard Endpoints](#dashboard-endpoints)
-- [Tips for Analysts](#tips-for-analysts)
-- [Maintainer](#maintainer)
-- [Links](#-links)
+- [🧭 Financial Dashboard API Guide](#-financial-dashboard-api-guide)
+    - [📘 Overview](#-overview)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [🗃️ Base URL](#️-base-url)
+  - [📌 Endpoints Overview](#-endpoints-overview)
+    - [🔗 Links](#-links)
 
 
 ## 🗃️ Base URL

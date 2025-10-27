@@ -1,9 +1,7 @@
-
-#### Backend README (`financial-backend/README.md`)
+# Backend README (`financial-backend/README.md`)
 
 This file covers the Flask backend, includes ToC links, and references the API Guide for detailed endpoints.
 
-```markdown
 # 💻 Financial Dashboard Backend
 
 <image-card alt="Flask" src="https://img.shields.io/badge/Backend-Flask-black?logo=flask" ></image-card>
