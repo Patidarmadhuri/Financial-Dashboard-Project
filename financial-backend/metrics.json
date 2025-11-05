@@ -1,6 +1,3334 @@
 [
   {
-    "data": [100, 200, 300],
-    "layout": { "title": "Sample Revenue Chart" }
+    "_id": "68e242208fad7b87bccc7d84",
+    "data": [
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AAPL<br>Quarter: 2018 Q4<br>CCP: $ 86427 M",
+          "Company: AAPL<br>Quarter: 2019 Q1<br>CCP: $ 80092 M",
+          "Company: AAPL<br>Quarter: 2019 Q2<br>CCP: $ 94614 M",
+          "Company: AAPL<br>Quarter: 2019 Q3<br>CCP: $ 100557 M",
+          "Company: AAPL<br>Quarter: 2019 Q4<br>CCP: $ 107162 M",
+          "Company: AAPL<br>Quarter: 2020 Q1<br>CCP: $ 94051 M",
+          "Company: AAPL<br>Quarter: 2020 Q2<br>CCP: $ 93025 M",
+          "Company: AAPL<br>Quarter: 2020 Q3<br>CCP: $ 90943 M",
+          "Company: AAPL<br>Quarter: 2020 Q4<br>CCP: $ 76826 M",
+          "Company: AAPL<br>Quarter: 2021 Q1<br>CCP: $ 69834 M",
+          "Company: AAPL<br>Quarter: 2021 Q2<br>CCP: $ 61696 M",
+          "Company: AAPL<br>Quarter: 2021 Q3<br>CCP: $ 62639 M",
+          "Company: AAPL<br>Quarter: 2021 Q4<br>CCP: $ 63913 M",
+          "Company: AAPL<br>Quarter: 2022 Q1<br>CCP: $ 51511 M",
+          "Company: AAPL<br>Quarter: 2022 Q2<br>CCP: $ 48231 M",
+          "Company: AAPL<br>Quarter: 2022 Q3<br>CCP: $ 48304 M",
+          "Company: AAPL<br>Quarter: 2022 Q4<br>CCP: $ 51355 M",
+          "Company: AAPL<br>Quarter: 2023 Q1<br>CCP: $ 55872 M",
+          "Company: AAPL<br>Quarter: 2023 Q2<br>CCP: $ 62482 M",
+          "Company: AAPL<br>Quarter: 2023 Q3<br>CCP: $ 61555 M",
+          "Company: AAPL<br>Quarter: 2023 Q4<br>CCP: $ 73100 M"
+        ],
+        "line": {
+          "color": "#636EFA",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#636EFA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AAPL_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          86427,
+          80092,
+          94614,
+          100557,
+          107162,
+          94051,
+          93025,
+          90943,
+          76826,
+          69834,
+          61696,
+          62639,
+          63913,
+          51511,
+          48231,
+          48304,
+          51355,
+          55872,
+          62482,
+          61555,
+          73100
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AMGN<br>Quarter: 2018 Q4<br>CCP: $ 29304 M",
+          "Company: AMGN<br>Quarter: 2019 Q1<br>CCP: $ 26301 M",
+          "Company: AMGN<br>Quarter: 2019 Q2<br>CCP: $ 21758 M",
+          "Company: AMGN<br>Quarter: 2019 Q3<br>CCP: $ 20853 M",
+          "Company: AMGN<br>Quarter: 2019 Q4<br>CCP: $ 8911 M",
+          "Company: AMGN<br>Quarter: 2020 Q1<br>CCP: $ 8012 M",
+          "Company: AMGN<br>Quarter: 2020 Q2<br>CCP: $ 11421 M",
+          "Company: AMGN<br>Quarter: 2020 Q3<br>CCP: $ 12360 M",
+          "Company: AMGN<br>Quarter: 2020 Q4<br>CCP: $ 10647 M",
+          "Company: AMGN<br>Quarter: 2021 Q1<br>CCP: $ 10566 M",
+          "Company: AMGN<br>Quarter: 2021 Q2<br>CCP: $ 8082 M",
+          "Company: AMGN<br>Quarter: 2021 Q3<br>CCP: $ 12921 M",
+          "Company: AMGN<br>Quarter: 2021 Q4<br>CCP: $ 8037 M",
+          "Company: AMGN<br>Quarter: 2022 Q1<br>CCP: $ 6544 M",
+          "Company: AMGN<br>Quarter: 2022 Q2<br>CCP: $ 7183 M",
+          "Company: AMGN<br>Quarter: 2022 Q3<br>CCP: $ 11478 M",
+          "Company: AMGN<br>Quarter: 2022 Q4<br>CCP: $ 9305 M",
+          "Company: AMGN<br>Quarter: 2023 Q1<br>CCP: $ 31561 M",
+          "Company: AMGN<br>Quarter: 2023 Q2<br>CCP: $ 34248 M",
+          "Company: AMGN<br>Quarter: 2023 Q3<br>CCP: $ 34741 M",
+          "Company: AMGN<br>Quarter: 2023 Q4<br>CCP: $ 10944 M"
+        ],
+        "line": {
+          "color": "#EF553B",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#EF553B",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AMGN_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          29304,
+          26301,
+          21758,
+          20853,
+          8911,
+          8012,
+          11421,
+          12360,
+          10647,
+          10566,
+          8082,
+          12921,
+          8037,
+          6544,
+          7183,
+          11478,
+          9305,
+          31561,
+          34248,
+          34741,
+          10944
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AMZN<br>Quarter: 2018 Q4<br>CCP: $ 41250 M",
+          "Company: AMZN<br>Quarter: 2019 Q1<br>CCP: $ 37020 M",
+          "Company: AMZN<br>Quarter: 2019 Q2<br>CCP: $ 41463 M",
+          "Company: AMZN<br>Quarter: 2019 Q3<br>CCP: $ 43401 M",
+          "Company: AMZN<br>Quarter: 2019 Q4<br>CCP: $ 55021 M",
+          "Company: AMZN<br>Quarter: 2020 Q1<br>CCP: $ 49292 M",
+          "Company: AMZN<br>Quarter: 2020 Q2<br>CCP: $ 71391 M",
+          "Company: AMZN<br>Quarter: 2020 Q3<br>CCP: $ 68402 M",
+          "Company: AMZN<br>Quarter: 2020 Q4<br>CCP: $ 84396 M",
+          "Company: AMZN<br>Quarter: 2021 Q1<br>CCP: $ 73270 M",
+          "Company: AMZN<br>Quarter: 2021 Q2<br>CCP: $ 89894 M",
+          "Company: AMZN<br>Quarter: 2021 Q3<br>CCP: $ 78988 M",
+          "Company: AMZN<br>Quarter: 2021 Q4<br>CCP: $ 96049 M",
+          "Company: AMZN<br>Quarter: 2022 Q1<br>CCP: $ 66385 M",
+          "Company: AMZN<br>Quarter: 2022 Q2<br>CCP: $ 60710 M",
+          "Company: AMZN<br>Quarter: 2022 Q3<br>CCP: $ 58662 M",
+          "Company: AMZN<br>Quarter: 2022 Q4<br>CCP: $ 70026 M",
+          "Company: AMZN<br>Quarter: 2023 Q1<br>CCP: $ 64405 M",
+          "Company: AMZN<br>Quarter: 2023 Q2<br>CCP: $ 63970 M",
+          "Company: AMZN<br>Quarter: 2023 Q3<br>CCP: $ 64169 M",
+          "Company: AMZN<br>Quarter: 2023 Q4<br>CCP: $ 86780 M"
+        ],
+        "line": {
+          "color": "#00CC96",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#00CC96",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AMZN_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          41250,
+          37020,
+          41463,
+          43401,
+          55021,
+          49292,
+          71391,
+          68402,
+          84396,
+          73270,
+          89894,
+          78988,
+          96049,
+          66385,
+          60710,
+          58662,
+          70026,
+          64405,
+          63970,
+          64169,
+          86780
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: BBWI<br>Quarter: 2018 Q3<br>CCP: $ 348 M",
+          "Company: BBWI<br>Quarter: 2018 Q4<br>CCP: $ 1413 M",
+          "Company: BBWI<br>Quarter: 2019 Q1<br>CCP: $ 1146 M",
+          "Company: BBWI<br>Quarter: 2019 Q2<br>CCP: $ 853 M",
+          "Company: BBWI<br>Quarter: 2019 Q3<br>CCP: $ 340 M",
+          "Company: BBWI<br>Quarter: 2019 Q4<br>CCP: $ 1499 M",
+          "Company: BBWI<br>Quarter: 2020 Q1<br>CCP: $ 957 M",
+          "Company: BBWI<br>Quarter: 2020 Q2<br>CCP: $ 2611 M",
+          "Company: BBWI<br>Quarter: 2020 Q3<br>CCP: $ 2622 M",
+          "Company: BBWI<br>Quarter: 2020 Q4<br>CCP: $ 3903 M",
+          "Company: BBWI<br>Quarter: 2021 Q1<br>CCP: $ 2807 M",
+          "Company: BBWI<br>Quarter: 2021 Q2<br>CCP: $ 1988 M",
+          "Company: BBWI<br>Quarter: 2021 Q3<br>CCP: $ 1441 M",
+          "Company: BBWI<br>Quarter: 2021 Q4<br>CCP: $ 1979 M",
+          "Company: BBWI<br>Quarter: 2022 Q1<br>CCP: $ 651 M",
+          "Company: BBWI<br>Quarter: 2022 Q2<br>CCP: $ 452 M",
+          "Company: BBWI<br>Quarter: 2022 Q3<br>CCP: $ 295 M",
+          "Company: BBWI<br>Quarter: 2022 Q4<br>CCP: $ 1232 M",
+          "Company: BBWI<br>Quarter: 2023 Q1<br>CCP: $ 1046 M",
+          "Company: BBWI<br>Quarter: 2023 Q2<br>CCP: $ 790 M",
+          "Company: BBWI<br>Quarter: 2023 Q3<br>CCP: $ 412 M"
+        ],
+        "line": {
+          "color": "#AB63FA",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#AB63FA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "BBWI_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-09-30T00:00:00",
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00"
+        ],
+        "y": [
+          348,
+          1413,
+          1146,
+          853,
+          340,
+          1499,
+          957,
+          2611,
+          2622,
+          3903,
+          2807,
+          1988,
+          1441,
+          1979,
+          651,
+          452,
+          295,
+          1232,
+          1046,
+          790,
+          412
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: BMY<br>Quarter: 2018 Q4<br>CCP: $ 8884 M",
+          "Company: BMY<br>Quarter: 2019 Q1<br>CCP: $ 8764 M",
+          "Company: BMY<br>Quarter: 2019 Q2<br>CCP: $ 29357 M",
+          "Company: BMY<br>Quarter: 2019 Q3<br>CCP: $ 32542 M",
+          "Company: BMY<br>Quarter: 2019 Q4<br>CCP: $ 15393 M",
+          "Company: BMY<br>Quarter: 2020 Q1<br>CCP: $ 18322 M",
+          "Company: BMY<br>Quarter: 2020 Q2<br>CCP: $ 21658 M",
+          "Company: BMY<br>Quarter: 2020 Q3<br>CCP: $ 21155 M",
+          "Company: BMY<br>Quarter: 2020 Q4<br>CCP: $ 15831 M",
+          "Company: BMY<br>Quarter: 2021 Q1<br>CCP: $ 12930 M",
+          "Company: BMY<br>Quarter: 2021 Q2<br>CCP: $ 12970 M",
+          "Company: BMY<br>Quarter: 2021 Q3<br>CCP: $ 15663 M",
+          "Company: BMY<br>Quarter: 2021 Q4<br>CCP: $ 16966 M",
+          "Company: BMY<br>Quarter: 2022 Q1<br>CCP: $ 14968 M",
+          "Company: BMY<br>Quarter: 2022 Q2<br>CCP: $ 13228 M",
+          "Company: BMY<br>Quarter: 2022 Q3<br>CCP: $ 9027 M",
+          "Company: BMY<br>Quarter: 2022 Q4<br>CCP: $ 9253 M",
+          "Company: BMY<br>Quarter: 2023 Q1<br>CCP: $ 9269 M",
+          "Company: BMY<br>Quarter: 2023 Q2<br>CCP: $ 8730 M",
+          "Company: BMY<br>Quarter: 2023 Q3<br>CCP: $ 7685 M",
+          "Company: BMY<br>Quarter: 2023 Q4<br>CCP: $ 12280 M"
+        ],
+        "line": {
+          "color": "#FFA15A",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FFA15A",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "BMY_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          8884,
+          8764,
+          29357,
+          32542,
+          15393,
+          18322,
+          21658,
+          21155,
+          15831,
+          12930,
+          12970,
+          15663,
+          16966,
+          14968,
+          13228,
+          9027,
+          9253,
+          9269,
+          8730,
+          7685,
+          12280
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: CNC<br>Quarter: 2018 Q4<br>CCP: $ 6064 M",
+          "Company: CNC<br>Quarter: 2019 Q1<br>CCP: $ 7042 M",
+          "Company: CNC<br>Quarter: 2019 Q2<br>CCP: $ 7640 M",
+          "Company: CNC<br>Quarter: 2019 Q3<br>CCP: $ 7019 M",
+          "Company: CNC<br>Quarter: 2019 Q4<br>CCP: $ 12986 M",
+          "Company: CNC<br>Quarter: 2020 Q1<br>CCP: $ 10694 M",
+          "Company: CNC<br>Quarter: 2020 Q2<br>CCP: $ 14356 M",
+          "Company: CNC<br>Quarter: 2020 Q3<br>CCP: $ 13695 M",
+          "Company: CNC<br>Quarter: 2020 Q4<br>CCP: $ 12380 M",
+          "Company: CNC<br>Quarter: 2021 Q1<br>CCP: $ 11289 M",
+          "Company: CNC<br>Quarter: 2021 Q2<br>CCP: $ 12584 M",
+          "Company: CNC<br>Quarter: 2021 Q3<br>CCP: $ 14940 M",
+          "Company: CNC<br>Quarter: 2021 Q4<br>CCP: $ 14657 M",
+          "Company: CNC<br>Quarter: 2022 Q1<br>CCP: $ 12905 M",
+          "Company: CNC<br>Quarter: 2022 Q2<br>CCP: $ 15229 M",
+          "Company: CNC<br>Quarter: 2022 Q3<br>CCP: $ 17178 M",
+          "Company: CNC<br>Quarter: 2022 Q4<br>CCP: $ 14395 M",
+          "Company: CNC<br>Quarter: 2023 Q1<br>CCP: $ 17988 M",
+          "Company: CNC<br>Quarter: 2023 Q2<br>CCP: $ 19382 M",
+          "Company: CNC<br>Quarter: 2023 Q3<br>CCP: $ 20431 M",
+          "Company: CNC<br>Quarter: 2023 Q4<br>CCP: $ 19652 M"
+        ],
+        "line": {
+          "color": "#19D3F3",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#19D3F3",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "CNC_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          6064,
+          7042,
+          7640,
+          7019,
+          12986,
+          10694,
+          14356,
+          13695,
+          12380,
+          11289,
+          12584,
+          14940,
+          14657,
+          12905,
+          15229,
+          17178,
+          14395,
+          17988,
+          19382,
+          20431,
+          19652
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: COP<br>Quarter: 2018 Q4<br>CCP: $ 6163 M",
+          "Company: COP<br>Quarter: 2019 Q1<br>CCP: $ 6467 M",
+          "Company: COP<br>Quarter: 2019 Q2<br>CCP: $ 6673 M",
+          "Company: COP<br>Quarter: 2019 Q3<br>CCP: $ 8101 M",
+          "Company: COP<br>Quarter: 2019 Q4<br>CCP: $ 8116 M",
+          "Company: COP<br>Quarter: 2020 Q1<br>CCP: $ 7774 M",
+          "Company: COP<br>Quarter: 2020 Q2<br>CCP: $ 6892 M",
+          "Company: COP<br>Quarter: 2020 Q3<br>CCP: $ 6522 M",
+          "Company: COP<br>Quarter: 2020 Q4<br>CCP: $ 6600 M",
+          "Company: COP<br>Quarter: 2021 Q1<br>CCP: $ 6935 M",
+          "Company: COP<br>Quarter: 2021 Q2<br>CCP: $ 8859 M",
+          "Company: COP<br>Quarter: 2021 Q3<br>CCP: $ 10511 M",
+          "Company: COP<br>Quarter: 2021 Q4<br>CCP: $ 5474 M",
+          "Company: COP<br>Quarter: 2022 Q1<br>CCP: $ 7144 M",
+          "Company: COP<br>Quarter: 2022 Q2<br>CCP: $ 8181 M",
+          "Company: COP<br>Quarter: 2022 Q3<br>CCP: $ 10422 M",
+          "Company: COP<br>Quarter: 2022 Q4<br>CCP: $ 9243 M",
+          "Company: COP<br>Quarter: 2023 Q1<br>CCP: $ 8609 M",
+          "Company: COP<br>Quarter: 2023 Q2<br>CCP: $ 6815 M",
+          "Company: COP<br>Quarter: 2023 Q3<br>CCP: $ 9446 M",
+          "Company: COP<br>Quarter: 2023 Q4<br>CCP: $ 6606 M"
+        ],
+        "line": {
+          "color": "#FF6692",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FF6692",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "COP_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          6163,
+          6467,
+          6673,
+          8101,
+          8116,
+          7774,
+          6892,
+          6522,
+          6600,
+          6935,
+          8859,
+          10511,
+          5474,
+          7144,
+          8181,
+          10422,
+          9243,
+          8609,
+          6815,
+          9446,
+          6606
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: GILD<br>Quarter: 2018 Q4<br>CCP: $ 30089 M",
+          "Company: GILD<br>Quarter: 2019 Q1<br>CCP: $ 27904 M",
+          "Company: GILD<br>Quarter: 2019 Q2<br>CCP: $ 27183 M",
+          "Company: GILD<br>Quarter: 2019 Q3<br>CCP: $ 22856 M",
+          "Company: GILD<br>Quarter: 2019 Q4<br>CCP: $ 24352 M",
+          "Company: GILD<br>Quarter: 2020 Q1<br>CCP: $ 20785 M",
+          "Company: GILD<br>Quarter: 2020 Q2<br>CCP: $ 18914 M",
+          "Company: GILD<br>Quarter: 2020 Q3<br>CCP: $ 23975 M",
+          "Company: GILD<br>Quarter: 2020 Q4<br>CCP: $ 7408 M",
+          "Company: GILD<br>Quarter: 2021 Q1<br>CCP: $ 5666 M",
+          "Company: GILD<br>Quarter: 2021 Q2<br>CCP: $ 6525 M",
+          "Company: GILD<br>Quarter: 2021 Q3<br>CCP: $ 5738 M",
+          "Company: GILD<br>Quarter: 2021 Q4<br>CCP: $ 6520 M",
+          "Company: GILD<br>Quarter: 2022 Q1<br>CCP: $ 5325 M",
+          "Company: GILD<br>Quarter: 2022 Q2<br>CCP: $ 5663 M",
+          "Company: GILD<br>Quarter: 2022 Q3<br>CCP: $ 5660 M",
+          "Company: GILD<br>Quarter: 2022 Q4<br>CCP: $ 6385 M",
+          "Company: GILD<br>Quarter: 2023 Q1<br>CCP: $ 5872 M",
+          "Company: GILD<br>Quarter: 2023 Q2<br>CCP: $ 6667 M",
+          "Company: GILD<br>Quarter: 2023 Q3<br>CCP: $ 6864 M",
+          "Company: GILD<br>Quarter: 2023 Q4<br>CCP: $ 7264 M"
+        ],
+        "line": {
+          "color": "#B6E880",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#B6E880",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "GILD_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          30089,
+          27904,
+          27183,
+          22856,
+          24352,
+          20785,
+          18914,
+          23975,
+          7408,
+          5666,
+          6525,
+          5738,
+          6520,
+          5325,
+          5663,
+          5660,
+          6385,
+          5872,
+          6667,
+          6864,
+          7264
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: HSIC<br>Quarter: 2018 Q4<br>CCP: $ 80 M",
+          "Company: HSIC<br>Quarter: 2019 Q1<br>CCP: $ 88 M",
+          "Company: HSIC<br>Quarter: 2019 Q2<br>CCP: $ 85 M",
+          "Company: HSIC<br>Quarter: 2019 Q3<br>CCP: $ 75 M",
+          "Company: HSIC<br>Quarter: 2019 Q4<br>CCP: $ 106 M",
+          "Company: HSIC<br>Quarter: 2020 Q1<br>CCP: $ 617 M",
+          "Company: HSIC<br>Quarter: 2020 Q2<br>CCP: $ 296 M",
+          "Company: HSIC<br>Quarter: 2020 Q3<br>CCP: $ 533 M",
+          "Company: HSIC<br>Quarter: 2020 Q4<br>CCP: $ 421 M",
+          "Company: HSIC<br>Quarter: 2021 Q1<br>CCP: $ 145 M",
+          "Company: HSIC<br>Quarter: 2021 Q2<br>CCP: $ 167 M",
+          "Company: HSIC<br>Quarter: 2021 Q3<br>CCP: $ 119 M",
+          "Company: HSIC<br>Quarter: 2021 Q4<br>CCP: $ 118 M",
+          "Company: HSIC<br>Quarter: 2022 Q1<br>CCP: $ 126 M",
+          "Company: HSIC<br>Quarter: 2022 Q2<br>CCP: $ 108 M",
+          "Company: HSIC<br>Quarter: 2022 Q3<br>CCP: $ 123 M",
+          "Company: HSIC<br>Quarter: 2022 Q4<br>CCP: $ 117 M",
+          "Company: HSIC<br>Quarter: 2023 Q1<br>CCP: $ 126 M",
+          "Company: HSIC<br>Quarter: 2023 Q2<br>CCP: $ 137 M",
+          "Company: HSIC<br>Quarter: 2023 Q3<br>CCP: $ 166 M",
+          "Company: HSIC<br>Quarter: 2023 Q4<br>CCP: $ 171 M"
+        ],
+        "line": {
+          "color": "#FF97FF",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FF97FF",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "HSIC_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          80.209,
+          88.115,
+          84.924,
+          75.256,
+          106.097,
+          617.368,
+          296.11,
+          533.495,
+          421.185,
+          144.538,
+          167.228,
+          119.133,
+          117.965,
+          126,
+          108,
+          123,
+          117,
+          126,
+          137,
+          166,
+          171
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: KO<br>Quarter: 2018 Q4<br>CCP: $ 15964 M",
+          "Company: KO<br>Quarter: 2019 Q1<br>CCP: $ 11948 M",
+          "Company: KO<br>Quarter: 2019 Q2<br>CCP: $ 13361 M",
+          "Company: KO<br>Quarter: 2019 Q3<br>CCP: $ 12988 M",
+          "Company: KO<br>Quarter: 2019 Q4<br>CCP: $ 11175 M",
+          "Company: KO<br>Quarter: 2020 Q1<br>CCP: $ 17666 M",
+          "Company: KO<br>Quarter: 2020 Q2<br>CCP: $ 19816 M",
+          "Company: KO<br>Quarter: 2020 Q3<br>CCP: $ 21128 M",
+          "Company: KO<br>Quarter: 2020 Q4<br>CCP: $ 10914 M",
+          "Company: KO<br>Quarter: 2021 Q1<br>CCP: $ 12589 M",
+          "Company: KO<br>Quarter: 2021 Q2<br>CCP: $ 13042 M",
+          "Company: KO<br>Quarter: 2021 Q3<br>CCP: $ 14869 M",
+          "Company: KO<br>Quarter: 2021 Q4<br>CCP: $ 12625 M",
+          "Company: KO<br>Quarter: 2022 Q1<br>CCP: $ 10356 M",
+          "Company: KO<br>Quarter: 2022 Q2<br>CCP: $ 11619 M",
+          "Company: KO<br>Quarter: 2022 Q3<br>CCP: $ 13220 M",
+          "Company: KO<br>Quarter: 2022 Q4<br>CCP: $ 11631 M",
+          "Company: KO<br>Quarter: 2023 Q1<br>CCP: $ 14295 M",
+          "Company: KO<br>Quarter: 2023 Q2<br>CCP: $ 15694 M",
+          "Company: KO<br>Quarter: 2023 Q3<br>CCP: $ 15435 M",
+          "Company: KO<br>Quarter: 2023 Q4<br>CCP: $ 13663 M"
+        ],
+        "line": {
+          "color": "#FECB52",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FECB52",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "KO_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          15964,
+          11948,
+          13361,
+          12988,
+          11175,
+          17666,
+          19816,
+          21128,
+          10914,
+          12589,
+          13042,
+          14869,
+          12625,
+          10356,
+          11619,
+          13220,
+          11631,
+          14295,
+          15694,
+          15435,
+          13663
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: TMO<br>Quarter: 2018 Q4<br>CCP: $ 2103 M",
+          "Company: TMO<br>Quarter: 2019 Q1<br>CCP: $ 1106 M",
+          "Company: TMO<br>Quarter: 2019 Q2<br>CCP: $ 2288 M",
+          "Company: TMO<br>Quarter: 2019 Q3<br>CCP: $ 1273 M",
+          "Company: TMO<br>Quarter: 2019 Q4<br>CCP: $ 2399 M",
+          "Company: TMO<br>Quarter: 2020 Q1<br>CCP: $ 2981 M",
+          "Company: TMO<br>Quarter: 2020 Q2<br>CCP: $ 5818 M",
+          "Company: TMO<br>Quarter: 2020 Q3<br>CCP: $ 7540 M",
+          "Company: TMO<br>Quarter: 2020 Q4<br>CCP: $ 10325 M",
+          "Company: TMO<br>Quarter: 2021 Q1<br>CCP: $ 5583 M",
+          "Company: TMO<br>Quarter: 2021 Q2<br>CCP: $ 7023 M",
+          "Company: TMO<br>Quarter: 2021 Q3<br>CCP: $ 12027 M",
+          "Company: TMO<br>Quarter: 2021 Q4<br>CCP: $ 4477 M",
+          "Company: TMO<br>Quarter: 2022 Q1<br>CCP: $ 2752 M",
+          "Company: TMO<br>Quarter: 2022 Q2<br>CCP: $ 1888 M",
+          "Company: TMO<br>Quarter: 2022 Q3<br>CCP: $ 2919 M",
+          "Company: TMO<br>Quarter: 2022 Q4<br>CCP: $ 8524 M",
+          "Company: TMO<br>Quarter: 2023 Q1<br>CCP: $ 3482 M",
+          "Company: TMO<br>Quarter: 2023 Q2<br>CCP: $ 3133 M",
+          "Company: TMO<br>Quarter: 2023 Q3<br>CCP: $ 6151 M",
+          "Company: TMO<br>Quarter: 2023 Q4<br>CCP: $ 8077 M"
+        ],
+        "line": {
+          "color": "#636EFA",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#636EFA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "TMO_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          2103,
+          1106,
+          2288,
+          1273,
+          2399,
+          2981,
+          5818,
+          7540,
+          10325,
+          5583,
+          7023,
+          12027,
+          4477,
+          2752,
+          1888,
+          2919,
+          8524,
+          3482,
+          3133,
+          6151,
+          8077
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: UPS<br>Quarter: 2018 Q4<br>CCP: $ 5035 M",
+          "Company: UPS<br>Quarter: 2019 Q1<br>CCP: $ 5111 M",
+          "Company: UPS<br>Quarter: 2019 Q2<br>CCP: $ 4797 M",
+          "Company: UPS<br>Quarter: 2019 Q3<br>CCP: $ 4538 M",
+          "Company: UPS<br>Quarter: 2019 Q4<br>CCP: $ 5741 M",
+          "Company: UPS<br>Quarter: 2020 Q1<br>CCP: $ 9460 M",
+          "Company: UPS<br>Quarter: 2020 Q2<br>CCP: $ 9216 M",
+          "Company: UPS<br>Quarter: 2020 Q3<br>CCP: $ 9241 M",
+          "Company: UPS<br>Quarter: 2020 Q4<br>CCP: $ 6316 M",
+          "Company: UPS<br>Quarter: 2021 Q1<br>CCP: $ 8082 M",
+          "Company: UPS<br>Quarter: 2021 Q2<br>CCP: $ 9954 M",
+          "Company: UPS<br>Quarter: 2021 Q3<br>CCP: $ 10560 M",
+          "Company: UPS<br>Quarter: 2021 Q4<br>CCP: $ 10593 M",
+          "Company: UPS<br>Quarter: 2022 Q1<br>CCP: $ 12545 M",
+          "Company: UPS<br>Quarter: 2022 Q2<br>CCP: $ 12071 M",
+          "Company: UPS<br>Quarter: 2022 Q3<br>CCP: $ 11376 M",
+          "Company: UPS<br>Quarter: 2022 Q4<br>CCP: $ 7595 M",
+          "Company: UPS<br>Quarter: 2023 Q1<br>CCP: $ 9398 M",
+          "Company: UPS<br>Quarter: 2023 Q2<br>CCP: $ 7883 M",
+          "Company: UPS<br>Quarter: 2023 Q3<br>CCP: $ 7278 M",
+          "Company: UPS<br>Quarter: 2023 Q4<br>CCP: $ 6072 M"
+        ],
+        "line": {
+          "color": "#EF553B",
+          "dash": "solid",
+          "width": 2
+        },
+        "marker": {
+          "color": "#EF553B",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "UPS_CCP",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          5035,
+          5111,
+          4797,
+          4538,
+          5741,
+          9460,
+          9216,
+          9241,
+          6316,
+          8082,
+          9954,
+          10560,
+          10593,
+          12545,
+          12071,
+          11376,
+          7595,
+          9398,
+          7883,
+          7278,
+          6072
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AAPL<br>Quarter: 2018 Q4<br>LTD: $ 102761 M",
+          "Company: AAPL<br>Quarter: 2019 Q1<br>LTD: $ 100706 M",
+          "Company: AAPL<br>Quarter: 2019 Q2<br>LTD: $ 98465 M",
+          "Company: AAPL<br>Quarter: 2019 Q3<br>LTD: $ 102067 M",
+          "Company: AAPL<br>Quarter: 2019 Q4<br>LTD: $ 103302 M",
+          "Company: AAPL<br>Quarter: 2020 Q1<br>LTD: $ 99478 M",
+          "Company: AAPL<br>Quarter: 2020 Q2<br>LTD: $ 101557 M",
+          "Company: AAPL<br>Quarter: 2020 Q3<br>LTD: $ 107440 M",
+          "Company: AAPL<br>Quarter: 2020 Q4<br>LTD: $ 107043 M",
+          "Company: AAPL<br>Quarter: 2021 Q1<br>LTD: $ 116645 M",
+          "Company: AAPL<br>Quarter: 2021 Q2<br>LTD: $ 113791 M",
+          "Company: AAPL<br>Quarter: 2021 Q3<br>LTD: $ 118719 M",
+          "Company: AAPL<br>Quarter: 2021 Q4<br>LTD: $ 117798 M",
+          "Company: AAPL<br>Quarter: 2022 Q1<br>LTD: $ 112982 M",
+          "Company: AAPL<br>Quarter: 2022 Q2<br>LTD: $ 108709 M",
+          "Company: AAPL<br>Quarter: 2022 Q3<br>LTD: $ 110087 M",
+          "Company: AAPL<br>Quarter: 2022 Q4<br>LTD: $ 109367 M",
+          "Company: AAPL<br>Quarter: 2023 Q1<br>LTD: $ 107619 M",
+          "Company: AAPL<br>Quarter: 2023 Q2<br>LTD: $ 105287 M",
+          "Company: AAPL<br>Quarter: 2023 Q3<br>LTD: $ 105103 M",
+          "Company: AAPL<br>Quarter: 2023 Q4<br>LTD: $ 106042 M"
+        ],
+        "line": {
+          "color": "#636EFA",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#636EFA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AAPL_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          102761,
+          100706,
+          98465,
+          102067,
+          103302,
+          99478,
+          101557,
+          107440,
+          107043,
+          116645,
+          113791,
+          118719,
+          117798,
+          112982,
+          108709,
+          110087,
+          109367,
+          107619,
+          105287,
+          105103,
+          106042
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AMGN<br>Quarter: 2018 Q4<br>LTD: $ 33929 M",
+          "Company: AMGN<br>Quarter: 2019 Q1<br>LTD: $ 33024 M",
+          "Company: AMGN<br>Quarter: 2019 Q2<br>LTD: $ 30614 M",
+          "Company: AMGN<br>Quarter: 2019 Q3<br>LTD: $ 29791 M",
+          "Company: AMGN<br>Quarter: 2019 Q4<br>LTD: $ 29903 M",
+          "Company: AMGN<br>Quarter: 2020 Q1<br>LTD: $ 31848 M",
+          "Company: AMGN<br>Quarter: 2020 Q2<br>LTD: $ 34224 M",
+          "Company: AMGN<br>Quarter: 2020 Q3<br>LTD: $ 34287 M",
+          "Company: AMGN<br>Quarter: 2020 Q4<br>LTD: $ 32986 M",
+          "Company: AMGN<br>Quarter: 2021 Q1<br>LTD: $ 32685 M",
+          "Company: AMGN<br>Quarter: 2021 Q2<br>LTD: $ 32782 M",
+          "Company: AMGN<br>Quarter: 2021 Q3<br>LTD: $ 37579 M",
+          "Company: AMGN<br>Quarter: 2021 Q4<br>LTD: $ 33309 M",
+          "Company: AMGN<br>Quarter: 2022 Q1<br>LTD: $ 36854 M",
+          "Company: AMGN<br>Quarter: 2022 Q2<br>LTD: $ 36522 M",
+          "Company: AMGN<br>Quarter: 2022 Q3<br>LTD: $ 38704 M",
+          "Company: AMGN<br>Quarter: 2022 Q4<br>LTD: $ 38945 M",
+          "Company: AMGN<br>Quarter: 2023 Q1<br>LTD: $ 61595 M",
+          "Company: AMGN<br>Quarter: 2023 Q2<br>LTD: $ 61544 M",
+          "Company: AMGN<br>Quarter: 2023 Q3<br>LTD: $ 60468 M",
+          "Company: AMGN<br>Quarter: 2023 Q4<br>LTD: $ 64613 M"
+        ],
+        "line": {
+          "color": "#EF553B",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#EF553B",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AMGN_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          33929,
+          33024,
+          30614,
+          29791,
+          29903,
+          31848,
+          34224,
+          34287,
+          32986,
+          32685,
+          32782,
+          37579,
+          33309,
+          36854,
+          36522,
+          38704,
+          38945,
+          61595,
+          61544,
+          60468,
+          64613
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: AMZN<br>Quarter: 2018 Q4<br>LTD: $ 23495 M",
+          "Company: AMZN<br>Quarter: 2019 Q1<br>LTD: $ 23322 M",
+          "Company: AMZN<br>Quarter: 2019 Q2<br>LTD: $ 23329 M",
+          "Company: AMZN<br>Quarter: 2019 Q3<br>LTD: $ 22472 M",
+          "Company: AMZN<br>Quarter: 2019 Q4<br>LTD: $ 23414 M",
+          "Company: AMZN<br>Quarter: 2020 Q1<br>LTD: $ 23437 M",
+          "Company: AMZN<br>Quarter: 2020 Q2<br>LTD: $ 33128 M",
+          "Company: AMZN<br>Quarter: 2020 Q3<br>LTD: $ 32929 M",
+          "Company: AMZN<br>Quarter: 2020 Q4<br>LTD: $ 31816 M",
+          "Company: AMZN<br>Quarter: 2021 Q1<br>LTD: $ 31868 M",
+          "Company: AMZN<br>Quarter: 2021 Q2<br>LTD: $ 50279 M",
+          "Company: AMZN<br>Quarter: 2021 Q3<br>LTD: $ 50055 M",
+          "Company: AMZN<br>Quarter: 2021 Q4<br>LTD: $ 48744 M",
+          "Company: AMZN<br>Quarter: 2022 Q1<br>LTD: $ 47556 M",
+          "Company: AMZN<br>Quarter: 2022 Q2<br>LTD: $ 58053 M",
+          "Company: AMZN<br>Quarter: 2022 Q3<br>LTD: $ 58919 M",
+          "Company: AMZN<br>Quarter: 2022 Q4<br>LTD: $ 67150 M",
+          "Company: AMZN<br>Quarter: 2023 Q1<br>LTD: $ 67084 M",
+          "Company: AMZN<br>Quarter: 2023 Q2<br>LTD: $ 63092 M",
+          "Company: AMZN<br>Quarter: 2023 Q3<br>LTD: $ 61098 M",
+          "Company: AMZN<br>Quarter: 2023 Q4<br>LTD: $ 58314 M"
+        ],
+        "line": {
+          "color": "#00CC96",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#00CC96",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "AMZN_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          23495,
+          23322,
+          23329,
+          22472,
+          23414,
+          23437,
+          33128,
+          32929,
+          31816,
+          31868,
+          50279,
+          50055,
+          48744,
+          47556,
+          58053,
+          58919,
+          67150,
+          67084,
+          63092,
+          61098,
+          58314
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: BBWI<br>Quarter: 2018 Q3<br>LTD: $ 5814 M",
+          "Company: BBWI<br>Quarter: 2018 Q4<br>LTD: $ 5739 M",
+          "Company: BBWI<br>Quarter: 2019 Q1<br>LTD: $ 5749 M",
+          "Company: BBWI<br>Quarter: 2019 Q2<br>LTD: $ 5475 M",
+          "Company: BBWI<br>Quarter: 2019 Q3<br>LTD: $ 5477 M",
+          "Company: BBWI<br>Quarter: 2019 Q4<br>LTD: $ 5487 M",
+          "Company: BBWI<br>Quarter: 2020 Q1<br>LTD: $ 5034 M",
+          "Company: BBWI<br>Quarter: 2020 Q2<br>LTD: $ 6269 M",
+          "Company: BBWI<br>Quarter: 2020 Q3<br>LTD: $ 6451 M",
+          "Company: BBWI<br>Quarter: 2020 Q4<br>LTD: $ 6366 M",
+          "Company: BBWI<br>Quarter: 2021 Q1<br>LTD: $ 5344 M",
+          "Company: BBWI<br>Quarter: 2021 Q2<br>LTD: $ 5938 M",
+          "Company: BBWI<br>Quarter: 2021 Q3<br>LTD: $ 4852 M",
+          "Company: BBWI<br>Quarter: 2021 Q4<br>LTD: $ 4854 M",
+          "Company: BBWI<br>Quarter: 2022 Q1<br>LTD: $ 4856 M",
+          "Company: BBWI<br>Quarter: 2022 Q2<br>LTD: $ 4858 M",
+          "Company: BBWI<br>Quarter: 2022 Q3<br>LTD: $ 4860 M",
+          "Company: BBWI<br>Quarter: 2022 Q4<br>LTD: $ 4862 M",
+          "Company: BBWI<br>Quarter: 2023 Q1<br>LTD: $ 4781 M",
+          "Company: BBWI<br>Quarter: 2023 Q2<br>LTD: $ 4668 M",
+          "Company: BBWI<br>Quarter: 2023 Q3<br>LTD: $ 4497 M"
+        ],
+        "line": {
+          "color": "#AB63FA",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#AB63FA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "BBWI_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-09-30T00:00:00",
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00"
+        ],
+        "y": [
+          5814,
+          5739,
+          5749,
+          5475,
+          5477,
+          5487,
+          5034,
+          6269,
+          6451,
+          6366,
+          5344,
+          5938,
+          4852,
+          4854,
+          4856,
+          4858,
+          4860,
+          4862,
+          4781,
+          4668,
+          4497
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: BMY<br>Quarter: 2018 Q4<br>LTD: $ 5646 M",
+          "Company: BMY<br>Quarter: 2019 Q1<br>LTD: $ 5635 M",
+          "Company: BMY<br>Quarter: 2019 Q2<br>LTD: $ 24433 M",
+          "Company: BMY<br>Quarter: 2019 Q3<br>LTD: $ 24390 M",
+          "Company: BMY<br>Quarter: 2019 Q4<br>LTD: $ 43387 M",
+          "Company: BMY<br>Quarter: 2020 Q1<br>LTD: $ 42844 M",
+          "Company: BMY<br>Quarter: 2020 Q2<br>LTD: $ 41853 M",
+          "Company: BMY<br>Quarter: 2020 Q3<br>LTD: $ 41364 M",
+          "Company: BMY<br>Quarter: 2020 Q4<br>LTD: $ 48336 M",
+          "Company: BMY<br>Quarter: 2021 Q1<br>LTD: $ 44505 M",
+          "Company: BMY<br>Quarter: 2021 Q2<br>LTD: $ 42503 M",
+          "Company: BMY<br>Quarter: 2021 Q3<br>LTD: $ 39677 M",
+          "Company: BMY<br>Quarter: 2021 Q4<br>LTD: $ 39605 M",
+          "Company: BMY<br>Quarter: 2022 Q1<br>LTD: $ 37450 M",
+          "Company: BMY<br>Quarter: 2022 Q2<br>LTD: $ 37107 M",
+          "Company: BMY<br>Quarter: 2022 Q3<br>LTD: $ 36966 M",
+          "Company: BMY<br>Quarter: 2022 Q4<br>LTD: $ 35056 M",
+          "Company: BMY<br>Quarter: 2023 Q1<br>LTD: $ 35078 M",
+          "Company: BMY<br>Quarter: 2023 Q2<br>LTD: $ 34656 M",
+          "Company: BMY<br>Quarter: 2023 Q3<br>LTD: $ 32137 M",
+          "Company: BMY<br>Quarter: 2023 Q4<br>LTD: $ 36653 M"
+        ],
+        "line": {
+          "color": "#FFA15A",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FFA15A",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "BMY_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          5646,
+          5635,
+          24433,
+          24390,
+          43387,
+          42844,
+          41853,
+          41364,
+          48336,
+          44505,
+          42503,
+          39677,
+          39605,
+          37450,
+          37107,
+          36966,
+          35056,
+          35078,
+          34656,
+          32137,
+          36653
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: CNC<br>Quarter: 2018 Q4<br>LTD: $ 6686 M",
+          "Company: CNC<br>Quarter: 2019 Q1<br>LTD: $ 6815 M",
+          "Company: CNC<br>Quarter: 2019 Q2<br>LTD: $ 7134 M",
+          "Company: CNC<br>Quarter: 2019 Q3<br>LTD: $ 7041 M",
+          "Company: CNC<br>Quarter: 2019 Q4<br>LTD: $ 13726 M",
+          "Company: CNC<br>Quarter: 2020 Q1<br>LTD: $ 17279 M",
+          "Company: CNC<br>Quarter: 2020 Q2<br>LTD: $ 16814 M",
+          "Company: CNC<br>Quarter: 2020 Q3<br>LTD: $ 16826 M",
+          "Company: CNC<br>Quarter: 2020 Q4<br>LTD: $ 16779 M",
+          "Company: CNC<br>Quarter: 2021 Q1<br>LTD: $ 16757 M",
+          "Company: CNC<br>Quarter: 2021 Q2<br>LTD: $ 16789 M",
+          "Company: CNC<br>Quarter: 2021 Q3<br>LTD: $ 18839 M",
+          "Company: CNC<br>Quarter: 2021 Q4<br>LTD: $ 18838 M",
+          "Company: CNC<br>Quarter: 2022 Q1<br>LTD: $ 18932 M",
+          "Company: CNC<br>Quarter: 2022 Q2<br>LTD: $ 18756 M",
+          "Company: CNC<br>Quarter: 2022 Q3<br>LTD: $ 18333 M",
+          "Company: CNC<br>Quarter: 2022 Q4<br>LTD: $ 18020 M",
+          "Company: CNC<br>Quarter: 2023 Q1<br>LTD: $ 18320 M",
+          "Company: CNC<br>Quarter: 2023 Q2<br>LTD: $ 18006 M",
+          "Company: CNC<br>Quarter: 2023 Q3<br>LTD: $ 18001 M",
+          "Company: CNC<br>Quarter: 2023 Q4<br>LTD: $ 17829 M"
+        ],
+        "line": {
+          "color": "#19D3F3",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#19D3F3",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "CNC_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          6686,
+          6815,
+          7134,
+          7041,
+          13726,
+          17279,
+          16814,
+          16826,
+          16779,
+          16757,
+          16789,
+          18839,
+          18838,
+          18932,
+          18756,
+          18333,
+          18020,
+          18320,
+          18006,
+          18001,
+          17829
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: COP<br>Quarter: 2018 Q4<br>LTD: $ 14856 M",
+          "Company: COP<br>Quarter: 2019 Q1<br>LTD: $ 14832 M",
+          "Company: COP<br>Quarter: 2019 Q2<br>LTD: $ 14809 M",
+          "Company: COP<br>Quarter: 2019 Q3<br>LTD: $ 14799 M",
+          "Company: COP<br>Quarter: 2019 Q4<br>LTD: $ 14790 M",
+          "Company: COP<br>Quarter: 2020 Q1<br>LTD: $ 14847 M",
+          "Company: COP<br>Quarter: 2020 Q2<br>LTD: $ 14852 M",
+          "Company: COP<br>Quarter: 2020 Q3<br>LTD: $ 14905 M",
+          "Company: COP<br>Quarter: 2020 Q4<br>LTD: $ 14750 M",
+          "Company: COP<br>Quarter: 2021 Q1<br>LTD: $ 19338 M",
+          "Company: COP<br>Quarter: 2021 Q2<br>LTD: $ 18805 M",
+          "Company: COP<br>Quarter: 2021 Q3<br>LTD: $ 18748 M",
+          "Company: COP<br>Quarter: 2021 Q4<br>LTD: $ 18734 M",
+          "Company: COP<br>Quarter: 2022 Q1<br>LTD: $ 17586 M",
+          "Company: COP<br>Quarter: 2022 Q2<br>LTD: $ 16295 M",
+          "Company: COP<br>Quarter: 2022 Q3<br>LTD: $ 16297 M",
+          "Company: COP<br>Quarter: 2022 Q4<br>LTD: $ 16226 M",
+          "Company: COP<br>Quarter: 2023 Q1<br>LTD: $ 15266 M",
+          "Company: COP<br>Quarter: 2023 Q2<br>LTD: $ 15565 M",
+          "Company: COP<br>Quarter: 2023 Q3<br>LTD: $ 18182 M",
+          "Company: COP<br>Quarter: 2023 Q4<br>LTD: $ 17863 M"
+        ],
+        "line": {
+          "color": "#FF6692",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FF6692",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "COP_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          14856,
+          14832,
+          14809,
+          14799,
+          14790,
+          14847,
+          14852,
+          14905,
+          14750,
+          19338,
+          18805,
+          18748,
+          18734,
+          17586,
+          16295,
+          16297,
+          16226,
+          15266,
+          15565,
+          18182,
+          17863
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: GILD<br>Quarter: 2018 Q4<br>LTD: $ 27322 M",
+          "Company: GILD<br>Quarter: 2019 Q1<br>LTD: $ 26578 M",
+          "Company: GILD<br>Quarter: 2019 Q2<br>LTD: $ 26083 M",
+          "Company: GILD<br>Quarter: 2019 Q3<br>LTD: $ 24588 M",
+          "Company: GILD<br>Quarter: 2019 Q4<br>LTD: $ 24593 M",
+          "Company: GILD<br>Quarter: 2020 Q1<br>LTD: $ 24097 M",
+          "Company: GILD<br>Quarter: 2020 Q2<br>LTD: $ 24102 M",
+          "Company: GILD<br>Quarter: 2020 Q3<br>LTD: $ 29290 M",
+          "Company: GILD<br>Quarter: 2020 Q4<br>LTD: $ 31402 M",
+          "Company: GILD<br>Quarter: 2021 Q1<br>LTD: $ 30166 M",
+          "Company: GILD<br>Quarter: 2021 Q2<br>LTD: $ 30175 M",
+          "Company: GILD<br>Quarter: 2021 Q3<br>LTD: $ 27686 M",
+          "Company: GILD<br>Quarter: 2021 Q4<br>LTD: $ 26695 M",
+          "Company: GILD<br>Quarter: 2022 Q1<br>LTD: $ 26208 M",
+          "Company: GILD<br>Quarter: 2022 Q2<br>LTD: $ 26216 M",
+          "Company: GILD<br>Quarter: 2022 Q3<br>LTD: $ 25223 M",
+          "Company: GILD<br>Quarter: 2022 Q4<br>LTD: $ 25230 M",
+          "Company: GILD<br>Quarter: 2023 Q1<br>LTD: $ 25239 M",
+          "Company: GILD<br>Quarter: 2023 Q2<br>LTD: $ 25246 M",
+          "Company: GILD<br>Quarter: 2023 Q3<br>LTD: $ 24982 M",
+          "Company: GILD<br>Quarter: 2023 Q4<br>LTD: $ 24987 M"
+        ],
+        "line": {
+          "color": "#B6E880",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#B6E880",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "GILD_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          27322,
+          26578,
+          26083,
+          24588,
+          24593,
+          24097,
+          24102,
+          29290,
+          31402,
+          30166,
+          30175,
+          27686,
+          26695,
+          26208,
+          26216,
+          25223,
+          25230,
+          25239,
+          25246,
+          24982,
+          24987
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: HSIC<br>Quarter: 2018 Q4<br>LTD: $ 1013 M",
+          "Company: HSIC<br>Quarter: 2019 Q1<br>LTD: $ 983 M",
+          "Company: HSIC<br>Quarter: 2019 Q2<br>LTD: $ 982 M",
+          "Company: HSIC<br>Quarter: 2019 Q3<br>LTD: $ 981 M",
+          "Company: HSIC<br>Quarter: 2019 Q4<br>LTD: $ 733 M",
+          "Company: HSIC<br>Quarter: 2020 Q1<br>LTD: $ 975 M",
+          "Company: HSIC<br>Quarter: 2020 Q2<br>LTD: $ 625 M",
+          "Company: HSIC<br>Quarter: 2020 Q3<br>LTD: $ 625 M",
+          "Company: HSIC<br>Quarter: 2020 Q4<br>LTD: $ 626 M",
+          "Company: HSIC<br>Quarter: 2021 Q1<br>LTD: $ 618 M",
+          "Company: HSIC<br>Quarter: 2021 Q2<br>LTD: $ 716 M",
+          "Company: HSIC<br>Quarter: 2021 Q3<br>LTD: $ 715 M",
+          "Company: HSIC<br>Quarter: 2021 Q4<br>LTD: $ 822 M",
+          "Company: HSIC<br>Quarter: 2022 Q1<br>LTD: $ 776 M",
+          "Company: HSIC<br>Quarter: 2022 Q2<br>LTD: $ 773 M",
+          "Company: HSIC<br>Quarter: 2022 Q3<br>LTD: $ 938 M",
+          "Company: HSIC<br>Quarter: 2022 Q4<br>LTD: $ 1046 M",
+          "Company: HSIC<br>Quarter: 2023 Q1<br>LTD: $ 1076 M",
+          "Company: HSIC<br>Quarter: 2023 Q2<br>LTD: $ 1199 M",
+          "Company: HSIC<br>Quarter: 2023 Q3<br>LTD: $ 1887 M",
+          "Company: HSIC<br>Quarter: 2023 Q4<br>LTD: $ 2087 M"
+        ],
+        "line": {
+          "color": "#FF97FF",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FF97FF",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "HSIC_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          1012.828,
+          982.617,
+          982.283,
+          981.417,
+          732.757,
+          975.328,
+          625.389,
+          625.372,
+          625.609,
+          617.637,
+          716.326,
+          715.178,
+          821.986,
+          776,
+          773,
+          938,
+          1046,
+          1076,
+          1199,
+          1887,
+          2087
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: KO<br>Quarter: 2018 Q4<br>LTD: $ 30361 M",
+          "Company: KO<br>Quarter: 2019 Q1<br>LTD: $ 32697 M",
+          "Company: KO<br>Quarter: 2019 Q2<br>LTD: $ 32045 M",
+          "Company: KO<br>Quarter: 2019 Q3<br>LTD: $ 31504 M",
+          "Company: KO<br>Quarter: 2019 Q4<br>LTD: $ 31769 M",
+          "Company: KO<br>Quarter: 2020 Q1<br>LTD: $ 36736 M",
+          "Company: KO<br>Quarter: 2020 Q2<br>LTD: $ 42910 M",
+          "Company: KO<br>Quarter: 2020 Q3<br>LTD: $ 47010 M",
+          "Company: KO<br>Quarter: 2020 Q4<br>LTD: $ 40610 M",
+          "Company: KO<br>Quarter: 2021 Q1<br>LTD: $ 43050 M",
+          "Company: KO<br>Quarter: 2021 Q2<br>LTD: $ 40141 M",
+          "Company: KO<br>Quarter: 2021 Q3<br>LTD: $ 39842 M",
+          "Company: KO<br>Quarter: 2021 Q4<br>LTD: $ 39454 M",
+          "Company: KO<br>Quarter: 2022 Q1<br>LTD: $ 38091 M",
+          "Company: KO<br>Quarter: 2022 Q2<br>LTD: $ 37543 M",
+          "Company: KO<br>Quarter: 2022 Q3<br>LTD: $ 36191 M",
+          "Company: KO<br>Quarter: 2022 Q4<br>LTD: $ 36776 M",
+          "Company: KO<br>Quarter: 2023 Q1<br>LTD: $ 36945 M",
+          "Company: KO<br>Quarter: 2023 Q2<br>LTD: $ 36797 M",
+          "Company: KO<br>Quarter: 2023 Q3<br>LTD: $ 36256 M",
+          "Company: KO<br>Quarter: 2023 Q4<br>LTD: $ 37507 M"
+        ],
+        "line": {
+          "color": "#FECB52",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#FECB52",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "KO_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          30361,
+          32697,
+          32045,
+          31504,
+          31769,
+          36736,
+          42910,
+          47010,
+          40610,
+          43050,
+          40141,
+          39842,
+          39454,
+          38091,
+          37543,
+          36191,
+          36776,
+          36945,
+          36797,
+          36256,
+          37507
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: TMO<br>Quarter: 2018 Q4<br>LTD: $ 18990 M",
+          "Company: TMO<br>Quarter: 2019 Q1<br>LTD: $ 18148 M",
+          "Company: TMO<br>Quarter: 2019 Q2<br>LTD: $ 19040 M",
+          "Company: TMO<br>Quarter: 2019 Q3<br>LTD: $ 17053 M",
+          "Company: TMO<br>Quarter: 2019 Q4<br>LTD: $ 17752 M",
+          "Company: TMO<br>Quarter: 2020 Q1<br>LTD: $ 19969 M",
+          "Company: TMO<br>Quarter: 2020 Q2<br>LTD: $ 21313 M",
+          "Company: TMO<br>Quarter: 2020 Q3<br>LTD: $ 21093 M",
+          "Company: TMO<br>Quarter: 2020 Q4<br>LTD: $ 21735 M",
+          "Company: TMO<br>Quarter: 2021 Q1<br>LTD: $ 18645 M",
+          "Company: TMO<br>Quarter: 2021 Q2<br>LTD: $ 18777 M",
+          "Company: TMO<br>Quarter: 2021 Q3<br>LTD: $ 21707 M",
+          "Company: TMO<br>Quarter: 2021 Q4<br>LTD: $ 34870 M",
+          "Company: TMO<br>Quarter: 2022 Q1<br>LTD: $ 33255 M",
+          "Company: TMO<br>Quarter: 2022 Q2<br>LTD: $ 30260 M",
+          "Company: TMO<br>Quarter: 2022 Q3<br>LTD: $ 29160 M",
+          "Company: TMO<br>Quarter: 2022 Q4<br>LTD: $ 34488 M",
+          "Company: TMO<br>Quarter: 2023 Q1<br>LTD: $ 35257 M",
+          "Company: TMO<br>Quarter: 2023 Q2<br>LTD: $ 34008 M",
+          "Company: TMO<br>Quarter: 2023 Q3<br>LTD: $ 35284 M",
+          "Company: TMO<br>Quarter: 2023 Q4<br>LTD: $ 34917 M"
+        ],
+        "line": {
+          "color": "#636EFA",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#636EFA",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "TMO_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          18990,
+          18148,
+          19040,
+          17053,
+          17752,
+          19969,
+          21313,
+          21093,
+          21735,
+          18645,
+          18777,
+          21707,
+          34870,
+          33255,
+          30260,
+          29160,
+          34488,
+          35257,
+          34008,
+          35284,
+          34917
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      },
+      {
+        "hovertemplate": "%{hovertext}<extra></extra>",
+        "hovertext": [
+          "Company: UPS<br>Quarter: 2018 Q4<br>LTD: $ 22736 M",
+          "Company: UPS<br>Quarter: 2019 Q1<br>LTD: $ 23166 M",
+          "Company: UPS<br>Quarter: 2019 Q2<br>LTD: $ 23379 M",
+          "Company: UPS<br>Quarter: 2019 Q3<br>LTD: $ 23901 M",
+          "Company: UPS<br>Quarter: 2019 Q4<br>LTD: $ 25238 M",
+          "Company: UPS<br>Quarter: 2020 Q1<br>LTD: $ 28601 M",
+          "Company: UPS<br>Quarter: 2020 Q2<br>LTD: $ 26948 M",
+          "Company: UPS<br>Quarter: 2020 Q3<br>LTD: $ 25718 M",
+          "Company: UPS<br>Quarter: 2020 Q4<br>LTD: $ 24654 M",
+          "Company: UPS<br>Quarter: 2021 Q1<br>LTD: $ 23727 M",
+          "Company: UPS<br>Quarter: 2021 Q2<br>LTD: $ 22591 M",
+          "Company: UPS<br>Quarter: 2021 Q3<br>LTD: $ 22106 M",
+          "Company: UPS<br>Quarter: 2021 Q4<br>LTD: $ 21915 M",
+          "Company: UPS<br>Quarter: 2022 Q1<br>LTD: $ 21881 M",
+          "Company: UPS<br>Quarter: 2022 Q2<br>LTD: $ 20576 M",
+          "Company: UPS<br>Quarter: 2022 Q3<br>LTD: $ 20350 M",
+          "Company: UPS<br>Quarter: 2022 Q4<br>LTD: $ 19662 M",
+          "Company: UPS<br>Quarter: 2023 Q1<br>LTD: $ 22188 M",
+          "Company: UPS<br>Quarter: 2023 Q2<br>LTD: $ 20763 M",
+          "Company: UPS<br>Quarter: 2023 Q3<br>LTD: $ 21125 M",
+          "Company: UPS<br>Quarter: 2023 Q4<br>LTD: $ 22264 M"
+        ],
+        "line": {
+          "color": "#EF553B",
+          "dash": "dash",
+          "width": 2
+        },
+        "marker": {
+          "color": "#EF553B",
+          "line": {
+            "color": "black",
+            "width": 2
+          },
+          "opacity": 0.8
+        },
+        "mode": "lines",
+        "name": "UPS_LTD",
+        "showlegend": true,
+        "x": [
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          22736,
+          23166,
+          23379,
+          23901,
+          25238,
+          28601,
+          26948,
+          25718,
+          24654,
+          23727,
+          22591,
+          22106,
+          21915,
+          21881,
+          20576,
+          20350,
+          19662,
+          22188,
+          20763,
+          21125,
+          22264
+        ],
+        "type": "scatter",
+        "xaxis": "x",
+        "yaxis": "y2"
+      }
+    ],
+    "layout": {
+      "height": 600,
+      "width": 1200,
+      "template": {
+        "data": {
+          "histogram2dcontour": [
+            {
+              "type": "histogram2dcontour",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "choropleth": [
+            {
+              "type": "choropleth",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          ],
+          "histogram2d": [
+            {
+              "type": "histogram2d",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "heatmap": [
+            {
+              "type": "heatmap",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "heatmapgl": [
+            {
+              "type": "heatmapgl",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "contourcarpet": [
+            {
+              "type": "contourcarpet",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          ],
+          "contour": [
+            {
+              "type": "contour",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "surface": [
+            {
+              "type": "surface",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              },
+              "colorscale": [
+                [
+                  0,
+                  "#0d0887"
+                ],
+                [
+                  0.1111111111111111,
+                  "#46039f"
+                ],
+                [
+                  0.2222222222222222,
+                  "#7201a8"
+                ],
+                [
+                  0.3333333333333333,
+                  "#9c179e"
+                ],
+                [
+                  0.4444444444444444,
+                  "#bd3786"
+                ],
+                [
+                  0.5555555555555556,
+                  "#d8576b"
+                ],
+                [
+                  0.6666666666666666,
+                  "#ed7953"
+                ],
+                [
+                  0.7777777777777778,
+                  "#fb9f3a"
+                ],
+                [
+                  0.8888888888888888,
+                  "#fdca26"
+                ],
+                [
+                  1,
+                  "#f0f921"
+                ]
+              ]
+            }
+          ],
+          "mesh3d": [
+            {
+              "type": "mesh3d",
+              "colorbar": {
+                "outlinewidth": 0,
+                "ticks": ""
+              }
+            }
+          ],
+          "scatter": [
+            {
+              "fillpattern": {
+                "fillmode": "overlay",
+                "size": 10,
+                "solidity": 0.2
+              },
+              "type": "scatter"
+            }
+          ],
+          "parcoords": [
+            {
+              "type": "parcoords",
+              "line": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scatterpolargl": [
+            {
+              "type": "scatterpolargl",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "bar": [
+            {
+              "error_x": {
+                "color": "#2a3f5f"
+              },
+              "error_y": {
+                "color": "#2a3f5f"
+              },
+              "marker": {
+                "line": {
+                  "color": "#E5ECF6",
+                  "width": 0.5
+                },
+                "pattern": {
+                  "fillmode": "overlay",
+                  "size": 10,
+                  "solidity": 0.2
+                }
+              },
+              "type": "bar"
+            }
+          ],
+          "scattergeo": [
+            {
+              "type": "scattergeo",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scatterpolar": [
+            {
+              "type": "scatterpolar",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "histogram": [
+            {
+              "marker": {
+                "pattern": {
+                  "fillmode": "overlay",
+                  "size": 10,
+                  "solidity": 0.2
+                }
+              },
+              "type": "histogram"
+            }
+          ],
+          "scattergl": [
+            {
+              "type": "scattergl",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scatter3d": [
+            {
+              "type": "scatter3d",
+              "line": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              },
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scattermapbox": [
+            {
+              "type": "scattermapbox",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scatterternary": [
+            {
+              "type": "scatterternary",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "scattercarpet": [
+            {
+              "type": "scattercarpet",
+              "marker": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              }
+            }
+          ],
+          "carpet": [
+            {
+              "aaxis": {
+                "endlinecolor": "#2a3f5f",
+                "gridcolor": "white",
+                "linecolor": "white",
+                "minorgridcolor": "white",
+                "startlinecolor": "#2a3f5f"
+              },
+              "baxis": {
+                "endlinecolor": "#2a3f5f",
+                "gridcolor": "white",
+                "linecolor": "white",
+                "minorgridcolor": "white",
+                "startlinecolor": "#2a3f5f"
+              },
+              "type": "carpet"
+            }
+          ],
+          "table": [
+            {
+              "cells": {
+                "fill": {
+                  "color": "#EBF0F8"
+                },
+                "line": {
+                  "color": "white"
+                }
+              },
+              "header": {
+                "fill": {
+                  "color": "#C8D4E3"
+                },
+                "line": {
+                  "color": "white"
+                }
+              },
+              "type": "table"
+            }
+          ],
+          "barpolar": [
+            {
+              "marker": {
+                "line": {
+                  "color": "#E5ECF6",
+                  "width": 0.5
+                },
+                "pattern": {
+                  "fillmode": "overlay",
+                  "size": 10,
+                  "solidity": 0.2
+                }
+              },
+              "type": "barpolar"
+            }
+          ],
+          "pie": [
+            {
+              "automargin": true,
+              "type": "pie"
+            }
+          ]
+        },
+        "layout": {
+          "autotypenumbers": "strict",
+          "colorway": [
+            "#636efa",
+            "#EF553B",
+            "#00cc96",
+            "#ab63fa",
+            "#FFA15A",
+            "#19d3f3",
+            "#FF6692",
+            "#B6E880",
+            "#FF97FF",
+            "#FECB52"
+          ],
+          "font": {
+            "color": "#2a3f5f"
+          },
+          "hovermode": "closest",
+          "hoverlabel": {
+            "align": "left"
+          },
+          "paper_bgcolor": "white",
+          "plot_bgcolor": "#E5ECF6",
+          "polar": {
+            "bgcolor": "#E5ECF6",
+            "angularaxis": {
+              "gridcolor": "white",
+              "linecolor": "white",
+              "ticks": ""
+            },
+            "radialaxis": {
+              "gridcolor": "white",
+              "linecolor": "white",
+              "ticks": ""
+            }
+          },
+          "ternary": {
+            "bgcolor": "#E5ECF6",
+            "aaxis": {
+              "gridcolor": "white",
+              "linecolor": "white",
+              "ticks": ""
+            },
+            "baxis": {
+              "gridcolor": "white",
+              "linecolor": "white",
+              "ticks": ""
+            },
+            "caxis": {
+              "gridcolor": "white",
+              "linecolor": "white",
+              "ticks": ""
+            }
+          },
+          "coloraxis": {
+            "colorbar": {
+              "outlinewidth": 0,
+              "ticks": ""
+            }
+          },
+          "colorscale": {
+            "sequential": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "sequentialminus": [
+              [
+                0,
+                "#0d0887"
+              ],
+              [
+                0.1111111111111111,
+                "#46039f"
+              ],
+              [
+                0.2222222222222222,
+                "#7201a8"
+              ],
+              [
+                0.3333333333333333,
+                "#9c179e"
+              ],
+              [
+                0.4444444444444444,
+                "#bd3786"
+              ],
+              [
+                0.5555555555555556,
+                "#d8576b"
+              ],
+              [
+                0.6666666666666666,
+                "#ed7953"
+              ],
+              [
+                0.7777777777777778,
+                "#fb9f3a"
+              ],
+              [
+                0.8888888888888888,
+                "#fdca26"
+              ],
+              [
+                1,
+                "#f0f921"
+              ]
+            ],
+            "diverging": [
+              [
+                0,
+                "#8e0152"
+              ],
+              [
+                0.1,
+                "#c51b7d"
+              ],
+              [
+                0.2,
+                "#de77ae"
+              ],
+              [
+                0.3,
+                "#f1b6da"
+              ],
+              [
+                0.4,
+                "#fde0ef"
+              ],
+              [
+                0.5,
+                "#f7f7f7"
+              ],
+              [
+                0.6,
+                "#e6f5d0"
+              ],
+              [
+                0.7,
+                "#b8e186"
+              ],
+              [
+                0.8,
+                "#7fbc41"
+              ],
+              [
+                0.9,
+                "#4d9221"
+              ],
+              [
+                1,
+                "#276419"
+              ]
+            ]
+          },
+          "xaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": "",
+            "title": {
+              "standoff": 15
+            },
+            "zerolinecolor": "white",
+            "automargin": true,
+            "zerolinewidth": 2
+          },
+          "yaxis": {
+            "gridcolor": "white",
+            "linecolor": "white",
+            "ticks": "",
+            "title": {
+              "standoff": 15
+            },
+            "zerolinecolor": "white",
+            "automargin": true,
+            "zerolinewidth": 2
+          },
+          "scene": {
+            "xaxis": {
+              "backgroundcolor": "#E5ECF6",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "showbackground": true,
+              "ticks": "",
+              "zerolinecolor": "white",
+              "gridwidth": 2
+            },
+            "yaxis": {
+              "backgroundcolor": "#E5ECF6",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "showbackground": true,
+              "ticks": "",
+              "zerolinecolor": "white",
+              "gridwidth": 2
+            },
+            "zaxis": {
+              "backgroundcolor": "#E5ECF6",
+              "gridcolor": "white",
+              "linecolor": "white",
+              "showbackground": true,
+              "ticks": "",
+              "zerolinecolor": "white",
+              "gridwidth": 2
+            }
+          },
+          "shapedefaults": {
+            "line": {
+              "color": "#2a3f5f"
+            }
+          },
+          "annotationdefaults": {
+            "arrowcolor": "#2a3f5f",
+            "arrowhead": 0,
+            "arrowwidth": 1
+          },
+          "geo": {
+            "bgcolor": "white",
+            "landcolor": "#E5ECF6",
+            "subunitcolor": "white",
+            "showland": true,
+            "showlakes": true,
+            "lakecolor": "white"
+          },
+          "title": {
+            "x": 0.05
+          },
+          "mapbox": {
+            "style": "light"
+          }
+        }
+      },
+      "xaxis": {
+        "anchor": "y",
+        "domain": [
+          0,
+          0.94
+        ],
+        "title": {
+          "font": {
+            "size": 14,
+            "color": "black",
+            "weight": "bold"
+          },
+          "text": "Quarter"
+        },
+        "tickangle": 45,
+        "tickmode": "array",
+        "tickvals": [
+          "2018-09-30T00:00:00",
+          "2018-12-31T00:00:00",
+          "2019-03-31T00:00:00",
+          "2019-06-30T00:00:00",
+          "2019-09-30T00:00:00",
+          "2019-12-31T00:00:00",
+          "2020-03-31T00:00:00",
+          "2020-06-30T00:00:00",
+          "2020-09-30T00:00:00",
+          "2020-12-31T00:00:00",
+          "2021-03-31T00:00:00",
+          "2021-06-30T00:00:00",
+          "2021-09-30T00:00:00",
+          "2021-12-31T00:00:00",
+          "2022-03-31T00:00:00",
+          "2022-06-30T00:00:00",
+          "2022-09-30T00:00:00",
+          "2022-12-31T00:00:00",
+          "2023-03-31T00:00:00",
+          "2023-06-30T00:00:00",
+          "2023-09-30T00:00:00",
+          "2023-12-31T00:00:00"
+        ],
+        "ticktext": [
+          "2018 Q3",
+          "2018 Q4",
+          "2019 Q1",
+          "2019 Q2",
+          "2019 Q3",
+          "2019 Q4",
+          "2020 Q1",
+          "2020 Q2",
+          "2020 Q3",
+          "2020 Q4",
+          "2021 Q1",
+          "2021 Q2",
+          "2021 Q3",
+          "2021 Q4",
+          "2022 Q1",
+          "2022 Q2",
+          "2022 Q3",
+          "2022 Q4",
+          "2023 Q1",
+          "2023 Q2",
+          "2023 Q3",
+          "2023 Q4"
+        ],
+        "showline": false,
+        "zeroline": true,
+        "zerolinecolor": "black",
+        "zerolinewidth": 2,
+        "showgrid": false
+      },
+      "yaxis": {
+        "anchor": "x",
+        "domain": [
+          0,
+          1
+        ],
+        "title": {
+          "font": {
+            "size": 14,
+            "color": "black",
+            "weight": "bold"
+          },
+          "text": "CCP, $ M"
+        },
+        "showgrid": false,
+        "range": [
+          0,
+          130590.9
+        ],
+        "showline": true,
+        "linecolor": "black",
+        "linewidth": 1,
+        "zeroline": true,
+        "zerolinecolor": "black",
+        "zerolinewidth": 2
+      },
+      "yaxis2": {
+        "anchor": "x",
+        "overlaying": "y",
+        "side": "right",
+        "title": {
+          "font": {
+            "size": 14,
+            "color": "black",
+            "weight": "bold"
+          },
+          "text": "LTD, $ M"
+        },
+        "showgrid": false,
+        "range": [
+          0,
+          130590.9
+        ],
+        "showline": true,
+        "linecolor": "black",
+        "linewidth": 1,
+        "zeroline": true,
+        "zerolinecolor": "black",
+        "zerolinewidth": 2
+      },
+      "updatemenus": [
+        {
+          "active": 2,
+          "buttons": [
+            {
+              "args": [
+                {
+                  "visible": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                },
+                {
+                  "yaxis.visible": true,
+                  "yaxis2.visible": false,
+                  "yaxis.title": "CCP, $ M",
+                  "yaxis2.title": "",
+                  "yaxis.range": [
+                    0,
+                    130590.9
+                  ],
+                  "yaxis2.range": [
+                    0,
+                    130590.9
+                  ]
+                }
+              ],
+              "label": "CCP",
+              "method": "update"
+            },
+            {
+              "args": [
+                {
+                  "visible": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                  ]
+                },
+                {
+                  "yaxis.visible": false,
+                  "yaxis2.visible": true,
+                  "yaxis.title": "",
+                  "yaxis2.title": "LTD, $ M",
+                  "yaxis.range": [
+                    0,
+                    130590.9
+                  ],
+                  "yaxis2.range": [
+                    0,
+                    130590.9
+                  ]
+                }
+              ],
+              "label": "LTD",
+              "method": "update"
+            },
+            {
+              "args": [
+                {
+                  "visible": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                  ]
+                },
+                {
+                  "yaxis.visible": true,
+                  "yaxis2.visible": true,
+                  "yaxis.title": "CCP, $ M",
+                  "yaxis2.title": "LTD, $ M",
+                  "yaxis.range": [
+                    0,
+                    130590.9
+                  ],
+                  "yaxis2.range": [
+                    0,
+                    130590.9
+                  ]
+                }
+              ],
+              "label": "Both",
+              "method": "update"
+            }
+          ],
+          "direction": "down",
+          "pad": {
+            "r": 10,
+            "t": 10
+          },
+          "showactive": true,
+          "x": 0.1,
+          "xanchor": "left",
+          "y": 1.15,
+          "yanchor": "top"
+        }
+      ],
+      "title": {
+        "text": "CCP and LTD by Company",
+        "x": 0.5,
+        "y": 1,
+        "font": {
+          "family": "Georgia",
+          "size": 20,
+          "color": "black",
+          "weight": "bold"
+        }
+      },
+      "plot_bgcolor": "white",
+      "showlegend": true,
+      "legend": {
+        "title": {
+          "text": "Metrics by Company"
+        }
+      }
+    }
+  },
+  {
+    "_id": "68fe8439501fe91e5ae487f3",
+    "data": [
+      {
+        "type": "scatter",
+        "name": "TEST_CCP",
+        "x": [
+          "2023-12-31T00:00:00"
+        ],
+        "y": [
+          50000
+        ],
+        "mode": "lines",
+        "line": {
+          "color": "#FF0000"
+        }
+      }
+    ],
+    "layout": {
+      "title": {
+        "text": "Test Dashboard"
+      }
+    }
   }
 ]
