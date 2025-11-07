@@ -36,11 +36,11 @@ MONGO_URI = os.getenv('MONGO_URI')
 for attempt in range(5):
     try:
         client = MongoClient(
-            MONGO_URI,
-            serverSelectionTimeoutMS=5000,
-            connectTimeoutMS=5000,
-            directConnection=True
-        )
+    MONGO_URI,
+    serverSelectionTimeoutMS=5000,
+    connectTimeoutMS=5000
+         )
+
         client.admin.command('ping')
         db = client["Financial_dashboard"]
         metrics_collection = db["metrics"]
