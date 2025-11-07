@@ -6,6 +6,7 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token
 from flask_bcrypt import Bcrypt
 import os
 from dotenv import load_dotenv
+from pymongo.errors import ConfigurationError, ConnectionFailure
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -33,17 +34,28 @@ MONGO_URI = os.getenv('MONGO_URI')
 if not MONGO_URI:
     raise RuntimeError("MONGO_URI not found in .env file! Add it to .env and Render.")
 
-client = MongoClient(MONGO_URI)
-db = client["Financial_dashboard"]  
-metrics_collection = db["metrics"]
-users_collection = db["users"]
-
-print("Connected to MongoDB Atlas (Financial_dashboard)")
+try:
+    client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)  # 5 sec timeout
+    client.admin.command('ping')  # Test connection
+    db = client["Financial_dashboard"]
+    metrics_collection = db["metrics"]
+    users_collection = db["users"]
+    print("Connected to MongoDB Atlas (Financial_dashboard)")
+except (ConfigurationError, ConnectionFailure) as e:
+    print(f"MongoDB Connection Failed: {e}")
+    print("Starting in OFFLINE MODE — API will return 500 on DB routes")
+    db = None
+    metrics_collection = None
+    users_collection = None
 
 # === ROUTES ===
 
 @app.route('/api/register', methods=['POST'])
 def register():
+
+    if users_collection is None:
+        return jsonify({"error": "Database not connected"}), 500
+    
     data = request.get_json()
     username = data.get('username')
     password = data.get('password')
