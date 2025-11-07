@@ -1,10 +1,11 @@
-# 💹 Financial Dashboard Project                         🌐 [Live Demo](https://your-deployment-link.com) (Coming soon)
+# 💹 Financial Dashboard Project                         🌐 [Live Demo](https://financial-dashboard-project.vercel.app/) 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Flask](https://img.shields.io/badge/Backend-Flask-black?logo=flask)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+
 
 ### 📘 Overview
 
@@ -57,7 +58,9 @@ The app follows a three-layer architecture:
 
 **React (Frontend) → Flask (Backend) → MongoDB (Database)**
 
+
 **Data Flow**:
+
 ```plaintext
 User → React (Login) → Flask (/api/login) → MongoDB (users) → JWT Token
 User → React (Dashboard) → Flask (/api/dashboard) → MongoDB (metrics) → Plotly Charts
@@ -266,3 +269,5 @@ Full Stack Developer | Passionate about clean code and data-driven solutions
 
 📄 License
 MIT License © 2025 Madhuri Patidar. See LICENSE
+
+
