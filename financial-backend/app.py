@@ -7,6 +7,7 @@ from flask_bcrypt import Bcrypt
 import os
 from dotenv import load_dotenv
 from pymongo.errors import ConfigurationError, ConnectionFailure
+import time
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -31,22 +32,28 @@ bcrypt = Bcrypt(app)
 
 # === CONNECT TO MONGODB ATLAS (CLOUD) ===
 MONGO_URI = os.getenv('MONGO_URI')
-if not MONGO_URI:
-    raise RuntimeError("MONGO_URI not found in .env file! Add it to .env and Render.")
 
-try:
-    client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)  # 5 sec timeout
-    client.admin.command('ping')  # Test connection
-    db = client["Financial_dashboard"]
-    metrics_collection = db["metrics"]
-    users_collection = db["users"]
-    print("Connected to MongoDB Atlas (Financial_dashboard)")
-except (ConfigurationError, ConnectionFailure) as e:
-    print(f"MongoDB Connection Failed: {e}")
-    print("Starting in OFFLINE MODE — API will return 500 on DB routes")
-    db = None
-    metrics_collection = None
-    users_collection = None
+for attempt in range(5):
+    try:
+        client = MongoClient(
+            MONGO_URI,
+            serverSelectionTimeoutMS=5000,
+            connectTimeoutMS=5000,
+            directConnection=True
+        )
+        client.admin.command('ping')
+        db = client["Financial_dashboard"]
+        metrics_collection = db["metrics"]
+        users_collection = db["users"]
+        print("Connected to MongoDB Atlas!")
+        break
+    except Exception as e:
+        print(f"Attempt {attempt + 1}/5: MongoDB failed: {e}")
+        if attempt == 4:
+            print("OFFLINE MODE — DB routes will return 500")
+            db = metrics_collection = users_collection = None
+        else:
+            time.sleep(3)
 
 # === ROUTES ===
 
