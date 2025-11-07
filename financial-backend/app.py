@@ -37,15 +37,16 @@ bcrypt = Bcrypt(app)
 
 # === CONNECT TO MONGODB ATLAS (CLOUD) ===
 MONGO_URI = os.getenv('MONGO_URI')
+if MONGO_URI:
+    MONGO_URI = MONGO_URI.strip()
 
 for attempt in range(5):
     try:
         client = MongoClient(
-    MONGO_URI,
-    serverSelectionTimeoutMS=5000,
-    connectTimeoutMS=5000
-         )
-
+            MONGO_URI,
+            serverSelectionTimeoutMS=5000,
+            connectTimeoutMS=5000
+        )
         client.admin.command('ping')
         db = client["financial_dashboard"]
         metrics_collection = db["metrics"]
