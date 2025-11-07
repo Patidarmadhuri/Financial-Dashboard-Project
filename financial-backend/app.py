@@ -13,8 +13,13 @@ app = Flask(__name__)
 # Enable CORS (update later for production)
 CORS(app, origins=["http://localhost:3000", "https://your-live-frontend.vercel.app"])
 
+
 # Load environment variables
 load_dotenv()
+
+@app.route("/")
+def home():
+    return jsonify({"message": "Backend is running! Use /api routes."})
 
 # JWT Configuration
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY') or 'temporary-fallback-key-123'
@@ -29,7 +34,7 @@ if not MONGO_URI:
     raise RuntimeError("MONGO_URI not found in .env file! Add it to .env and Render.")
 
 client = MongoClient(MONGO_URI)
-db = client["Financial_dashboard"]  # Fixed spelling!
+db = client["Financial_dashboard"]  
 metrics_collection = db["metrics"]
 users_collection = db["users"]
 
