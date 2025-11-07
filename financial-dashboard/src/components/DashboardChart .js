@@ -3,6 +3,7 @@ import axios from 'axios';
 import Plot from 'react-plotly.js';
 
 const DashboardChart = () => {
+  const API_URL = process.env.REACT_APP_API_URL;
   const [token, setToken] = useState(localStorage.getItem('token') || '');
   const [dashboardData, setDashboardData] = useState(null);
   const [error, setError] = useState(null);
@@ -15,7 +16,7 @@ const DashboardChart = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post(`${API_URL}/api/login`, {
         username,
         password,
       });
@@ -23,8 +24,9 @@ const DashboardChart = () => {
       setToken(token);
       localStorage.setItem('token', token);
       setError(null);
-      await fetchDashboard();
+      await fetchDashboard(token);
     } catch (err) {
+      console.error('Login error:', err);
       setError(err.response?.data?.error || 'Login failed');
     } finally {
       setLoading(false);
@@ -32,18 +34,19 @@ const DashboardChart = () => {
   };
 
   // Fetch dashboard data
-  const fetchDashboard = async () => {
+  const fetchDashboard = async (currentToken = token) => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/dashboard', {
+      const response = await axios.get(`${API_URL}/api/dashboard`, {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${currentToken}`,
         },
       });
       setDashboardData(response.data);
       setError(null);
     } catch (err) {
-      setError(err.response?.data?.msg || 'Failed to fetch dashboard');
+      console.error('Fetch error:', err);
+      setError(err.response?.data?.error || 'Failed to fetch dashboard');
     } finally {
       setLoading(false);
     }
@@ -54,6 +57,7 @@ const DashboardChart = () => {
     if (token) {
       fetchDashboard();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
   return (
