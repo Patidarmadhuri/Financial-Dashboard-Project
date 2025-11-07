@@ -96,16 +96,30 @@ def login():
     data = request.json
     username = data.get("username")
     password = data.get("password")
-    
+
     if not username or not password:
         return jsonify({"error": "Username and password required"}), 400
-    
+
     user = users_collection.find_one({"username": username})
-    if not user or not bcrypt.check_password_hash(user["password"], password):
+    if not user:
+        print("User not found in database")
         return jsonify({"error": "Invalid username or password"}), 401
-    
-    access_token = create_access_token(identity=username)
-    return jsonify({"token": access_token}), 200
+
+    # Debugging info
+    print(f"Trying login for user: {username}")
+    print(f"Stored hash: {user['password']}")
+
+    try:
+        if bcrypt.check_password_hash(user["password"], password):
+            access_token = create_access_token(identity=username)
+            print("✅ Password matched! Login success")
+            return jsonify({"token": access_token}), 200
+        else:
+            print("❌ Password did NOT match!")
+            return jsonify({"error": "Invalid username or password"}), 401
+    except Exception as e:
+        print(f"Error during password check: {e}")
+        return jsonify({"error": "Login error"}), 500
 
 
 @app.route("/api/dashboard", methods=["GET"])
