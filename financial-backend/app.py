@@ -42,7 +42,7 @@ for attempt in range(5):
          )
 
         client.admin.command('ping')
-        db = client["Financial_dashboard"]
+        db = client["financial_dashboard"]
         metrics_collection = db["metrics"]
         users_collection = db["users"]
         print("Connected to MongoDB Atlas!")
