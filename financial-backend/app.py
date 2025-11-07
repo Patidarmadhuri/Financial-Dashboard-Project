@@ -13,7 +13,12 @@ import time
 app = Flask(__name__)
 
 # Enable CORS (update later for production)
-CORS(app, origins=["http://localhost:3000", "https://your-live-frontend.vercel.app"])
+#CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": [
+    "http://localhost:3000",
+    "https://financial-dashboard-project-eta.vercel.app"
+]}})
+
 
 
 # Load environment variables
