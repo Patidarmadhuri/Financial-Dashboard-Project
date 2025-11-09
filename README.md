@@ -1,15 +1,16 @@
 # Financial Dashboard Project  
 **Frontend Live Demo**: [https://financial-dashboard-project.vercel.app](https://financial-dashboard-project.vercel.app)  
 
+**Backend API**: [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com)
+
+**Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
+
+
 Login Details : 
 {
   "username": "aapl",
   "password": "987654321"
 }
-**Backend API**: [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com)
-
-**Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
-
 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
