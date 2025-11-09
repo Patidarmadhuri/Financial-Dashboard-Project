@@ -6,8 +6,6 @@ Login Details :
   "username": "aapl",
   "password": "987654321"
 }
-
-
 **Backend API**: [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com)
 
 **Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
@@ -55,12 +53,17 @@ No more Excel chaos — just **clear visuals** for **Cash Position (CCP)**, **Lo
 ---
 ## 🧠 How It Works
 
-´´´mermaid
+```mermaid
 graph TD
-    A [User Opens Dashboard] --> B [React Frontend on Vercel]
-    B --> C [Flask API on Render]
-    C --> D [MongoDB Atlas (Cloud)]
-    D --> C --> B --> A
+    A[User Opens Dashboard] --> B[React Frontend on Vercel]
+    B --> C[Flask API on Render]
+    C --> D[MongoDB Atlas Cloud]
+    D --> C
+    C --> B
+    B --> A
+```
+
+
 
    1. You log in → Secure JWT token stored
    2. Charts load → API fetches data from MongoDB Atlas
@@ -116,12 +119,12 @@ plaintextFinancial-Dashboard-Project/
 🔍 Prerequisites
 
 | Tool                       | Link                                                       |
-| -------------------------- | ---------------------------------------------------------- |
+|----------------------------|------------------------------------------------------------|
 | Node.js (v16+)             | [Download](https://nodejs.org/en)                          |
 | Python (3.8+)              | [Download](https://www.python.org/downloads/)              |
 | MongoDB                    | [Download](https://www.mongodb.com/try/download/community) |
 | Postman (optional)         | [Download](https://www.postman.com/downloads/)             |
-| MongoDB Compass (optional) | [Download](https://www.mongodb.com/try/download/compass)   |
+| MongoDB Compass (optional) | [Download](https://www.mongodb.com/try/download/compass)
 
 
 ## Backend (Flask)
@@ -219,6 +222,7 @@ json{
 
 **Login Screen**  
 <img src="docs/screenshots/Frontend/login.png" alt="Login" width="600">
+
 
 ## Security
 Passwords → Hashed with Bcrypt
