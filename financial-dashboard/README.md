@@ -1,25 +1,52 @@
-# 🌐 Financial Dashboard Frontend
+# 🌐Financial Dashboard Frontend
 
-<image-card alt="React" src="https://img.shields.io/badge/Frontend-React-blue?logo=react" ></image-card>
-<image-card alt="Status" src="https://img.shields.io/badge/Status-Active-success" ></image-card>
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?logo=vercel)
+![Status](https://img.shields.io/badge/Status-LIVE%20&%20SECURE-success)
+
 
 ---
 
-### 📘 Overview
+## Live Demo
 
-Visualizing financial metrics efficiently can be challenging for teams. The **React frontend** provides a clean, responsive interface for logging in, fetching data from the Flask backend, and rendering interactive charts with Plotly.js. It enables users to track KPIs such as **Cash & Cash Equivalents (CCP)** and **Long-Term Debt (LTD)** for companies like **AAPL**, **AMZN**, and **KO**, making financial insights accessible at a glance.
+**Frontend Live Demo**: [
+https://financial-dashboard-project-eta.vercel.app/](
+https://financial-dashboard-project-eta.vercel.app/) 
+
+**Login with**:
+
+{
+  "username": "aapl",
+  "password": "987654321"
+}
+
+
+
+## Overview
+
+Interactive **React dashboard** with:
+
+- **Secure login & registration**  
+- **Real-time Plotly.js charts** (zoom, filter, dual-axis)  
+- **CCP**, **LTD**, **Revenue** trends for **AAPL, AMZN, KO**  
+- **Live data** from **MongoDB Atlas** via Flask API
 
 ---
 
 ## 📖 Table of Contents
 
-- [🌐 Financial Dashboard Frontend](#-financial-dashboard-frontend)
-    - [📘 Overview](#-overview)
+- [🌐Financial Dashboard Frontend](#financial-dashboard-frontend)
+  - [Live Demo](#live-demo)
+  - [Overview](#overview)
   - [📖 Table of Contents](#-table-of-contents)
     - [🔗 Links](#-links)
   - [🎯 Purpose](#-purpose)
   - [🛠️ Tech Stack](#️-tech-stack)
   - [📂 Directory Structure](#-directory-structure)
+    - [🚀 Setup Instructions](#-setup-instructions)
+    - [Production (Vercel)](#production-vercel)
+    - [🔄 How It Works](#-how-it-works)
+    - [📸 Screenshots](#-screenshots)
     - [🔗 Links](#-links-1)
   
 
@@ -39,6 +66,8 @@ The frontend provides a user-friendly interface for financial teams to log in, f
 |-----------------|--------------------------------|
 | **Frontend**    | React, Plotly.js, Axios        |
 | **Environment** | Node.js (v16+)                 |
+| **Deployment**    | Vercel (Free Tier)       |
+| **API** | Flask on Render               |
 
 ## 📂 Directory Structure
 
@@ -51,53 +80,89 @@ frontend/
 ├── public/
 ├── package.json             # Node.js dependencies
 ├── README.md                # This file
+├── .env                     # Local API URL
+```
 
-🚀 Setup Instructions
+
+
+
+
+### 🚀 Setup Instructions
 Prerequisites
 Node.js (v16+): Download
 Backend running at http://localhost:5000 (see Backend README).
 
-Setup
+Steps
 
 1. Navigate to frontend/:
-bash cd frontend
+cd finacial-dashboard
+npm install
 
 2. Install dependencies:
 bash npm install
 
-3 .Start the app:
+3. Create .env:
+   REACT_APP_API_URL=http://localhost:5000
+
+4. Start the app:
 bash npm start
 ➡️ Runs at: http://localhost:3000
 
+### Production (Vercel)
+Environment Variable (Set in Vercel Dashboard):
+Key,Value
+REACT_APP_API_URL,https://financial-dashboard-project-l853.onrender.com
 
-🔄 How It Works
+Auto-deployed from GitHub
+
+
+
+### 🔄 How It Works
 
 1. Login: Users authenticate via a React form, sending POST to /api/login, storing JWT in localStorage.
 2. Data Fetch: Sends GET to /api/dashboard with Authorization: Bearer <token>.
 3. Visualization: DashboardChart.js renders Plotly JSON as interactive charts.
 
 Data Flow:
-User → React (Login) → Flask (/api/login) → JWT Token
-User → React (Dashboard) → Flask (/api/dashboard) → Plotly Chart
+```mermaid
+graph TD
+    A[User] --> B[React Login]
+    B --> C[Flask /api/login]
+    C --> D[JWT Token]
+    D --> B
+    B --> E[Dashboard]
+    E --> F[GET /api/dashboard]
+    F --> G[Plotly Charts]
+```
 
-📸 Screenshots
-Dashboard: Interactive Plotly chart for CCP and LTD trends.
-<img src="../docs/screenshots/Frontend/Dashboard.png" alt="Dashboard" width="400">
+### 📸 Screenshots
+
+
 Login Screen: Secure login form.
-<img src="../docs/screenshots/Frontend/login.png" alt="Login Screen" width="400">
+**Login Screen** 
+
+<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Login" width="600">
+
+**Dashboard** 
+
+Dashboard: Interactive Plotly chart for CCP and LTD trends.
+
+<img src="../docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
+
+
 
 🤝 Contributing
 
-1. Fork: https://github.com/Patidarmadhuri/Financial-Dashboard-Project
+1. Fork: https://github.com/Patidarmadhuri/docs\screenshots\Frontend\Financial_Dashbord_Screenshot.pngFinancial-Dashboard-Project
 
 2. Create branch:
 bash git checkout -b feature/frontend-your-feature
 
-3. Commit and push:
+1. Commit and push:
 bash git commit -m "Add frontend feature"
 git push origin feature/frontend-your-feature
 
-4. Open a Pull Request.
+1. Open a Pull Request.
 
 
 Standards:

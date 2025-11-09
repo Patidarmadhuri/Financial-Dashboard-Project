@@ -232,13 +232,21 @@ json{
 }
 
 ## Screenshots
+ 
+**Login Screen** 
+<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Login" width="600">
 
 **Dashboard**  
-<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Dashboard" width="600">
+<img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
 
-**Login Screen**  
-<img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Login" width="600">
+🔗 Main README | API Guide
 
+### 🔗 Links
+
+- [Frontend README](../financial-dashboard/README.md)  
+- [Backend README](../financial-backend/README.md)  
+- [API Guide](../docs/api-guide.md)
+  
 
 ## Security
 Passwords → Hashed with Bcrypt
