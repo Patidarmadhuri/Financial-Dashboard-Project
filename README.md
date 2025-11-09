@@ -234,10 +234,10 @@ json{
 ## Screenshots
 
 **Dashboard**  
-<img src="docs/screenshots/Frontend/Dashboard.png" alt="Dashboard" width="600">
+<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Dashboard" width="600">
 
 **Login Screen**  
-<img src="docs/screenshots/Frontend/login.png" alt="Login" width="600">
+<img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Login" width="600">
 
 
 ## Security
