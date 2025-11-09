@@ -7,12 +7,12 @@ https://financial-dashboard-project-eta.vercel.app/)
 
 **Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
 
-**Login Details**:
+
+Login Details : 
 {
   "username": "aapl",
   "password": "987654321"
 }
-
 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
@@ -24,7 +24,6 @@ https://financial-dashboard-project-eta.vercel.app/)
 ![Status](https://img.shields.io/badge/Status-LIVE%20&%20SECURE-success)
 
 ---
-
 
 ## Overview  
 **Turn raw financial data into powerful, real-time insights.**  
@@ -153,12 +152,9 @@ Runs at: http://localhost:3000
 
 ### Environment Variables (Production)
 
- Key             `           `       Value (in Render/Vercel)
-
- `REACT_APP_API_URL`           `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
-
- `JWT_SECRET_KEY `      `96d76fa... `
-
+ `Key                  `    `                      `       `Value (in Render/Vercel)` 
+ `REACT_APP_API_URL`   `        `   `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
+ `JWT_SECRET_KEY `    `    `    `96d76fa... `
 
 
 
@@ -178,14 +174,18 @@ Runs at: http://localhost:3000
 
 Use **Postman** or **cURL** to register a new user:
 
-```bash
+
 POST https://financial-dashboard-project-l853.onrender.com/api/register
 Content-Type: application/json
-
+bash
 {
   "username": "newuser",
   "password": "yourpassword123"
 }
+
+
+
+
 
 ### 📡 API Reference 
 Explore the API Guide for detailed endpoints, payloads, and Postman examples. Key endpoints:
