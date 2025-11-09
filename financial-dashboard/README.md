@@ -88,6 +88,7 @@ frontend/
 
 
 ### 🚀 Setup Instructions
+```
 Prerequisites
 Node.js (v16+): Download
 Backend running at http://localhost:5000 (see Backend README).
@@ -108,6 +109,8 @@ bash npm install
 bash npm start
 ➡️ Runs at: http://localhost:3000
 
+```
+
 ### Production (Vercel)
 Environment Variable (Set in Vercel Dashboard):
 Key,Value
@@ -118,10 +121,11 @@ Auto-deployed from GitHub
 
 
 ### 🔄 How It Works
-
+```
 1. Login: Users authenticate via a React form, sending POST to /api/login, storing JWT in localStorage.
 2. Data Fetch: Sends GET to /api/dashboard with Authorization: Bearer <token>.
 3. Visualization: DashboardChart.js renders Plotly JSON as interactive charts.
+```
 
 Data Flow:
 ```mermaid
@@ -152,7 +156,7 @@ Dashboard: Interactive Plotly chart for CCP and LTD trends.
 
 
 🤝 Contributing
-
+```
 1. Fork: https://github.com/Patidarmadhuri/docs\screenshots\Frontend\Financial_Dashbord_Screenshot.pngFinancial-Dashboard-Project
 
 2. Create branch:
@@ -163,12 +167,14 @@ bash git commit -m "Add frontend feature"
 git push origin feature/frontend-your-feature
 
 1. Open a Pull Request.
-
+```
 
 Standards:
+```
 Code Style: ESLint for React
 Issues: Use GitHub Issues
 Screenshots: Add to ../docs/screenshots/
+```
 
 🔗 Main README | API Guide
 

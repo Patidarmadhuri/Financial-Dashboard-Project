@@ -133,7 +133,7 @@ plaintextFinancial-Dashboard-Project/
 
 ```
 
-🚀 Setup Guide (For Developers)
+### 🚀 Setup Guide (For Developers)
 🔍 Prerequisites
 
 | Tool                       | Link                                                       |
@@ -146,7 +146,7 @@ plaintextFinancial-Dashboard-Project/
 
 
 ## Backend (Flask)
-
+```
 bash
 cd financial-backend
 python -m venv venv
@@ -156,29 +156,32 @@ python app.py
 
 Runs at: http://localhost:5000
 
-
+```
 ## Frontend (React)
+```
 bash
 cd finacial-dashboard
 npm install
 npm start
 Runs at: http://localhost:3000
-
+```
 
 ### Environment Variables (Production)
+```
+ Key                   Value (in Render/Vercel) 
 
- `Key                  `    `                      `       `Value (in Render/Vercel)` 
- `REACT_APP_API_URL`   `        `   `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
- `JWT_SECRET_KEY `    `    `    `96d76fa... `
+ REACT_APP_API_URL      https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... 
+
+ JWT_SECRET_KEY         96d76fa... 
 
 
-
+```
 
 
 ## 🗄️ Database (MongoDB Atlas - Cloud)
-
+```
 **No local setup needed** — Everything runs in the **cloud**!
-
+```
 ### Already Set Up:
 - **Database**: `Financial_dashboard`
 - **Collections**: `users`, `metrics`
@@ -186,6 +189,7 @@ Runs at: http://localhost:3000
 - **Test User**: `aapl` / `987654321`
 
 ### How to Add Data (Optional - For Testing)
+```
 
 Use **Postman** or **cURL** to register a new user:
 
@@ -199,10 +203,11 @@ bash
 }
 
 
-
+```
 
 
 ### 📡 API Reference 
+
 Explore the API Guide for detailed endpoints, payloads, and Postman examples. Key endpoints:
 
 | Endpoint              | Method | Auth | Description                 |
@@ -215,7 +220,7 @@ Explore the API Guide for detailed endpoints, payloads, and Postman examples. Ke
 | `/api/dashboard/<id>` | PUT    | ✅    | Update a dashboard          |
 | `/api/dashboard/<id>` | DELETE | ✅    | Delete a dashboard          |
 
-
+```
 Auth Header (for protected routes):
 plaintext  Authorization: Bearer <your_token>
 
@@ -231,10 +236,13 @@ json{
   "access_token": "<jwt_token>"
 }
 
+```
+
 ## Screenshots
  
 **Login Screen** 
 <img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Login" width="600">
+
 
 **Dashboard**  
 <img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
@@ -249,23 +257,25 @@ json{
   
 
 ## Security
+```
 Passwords → Hashed with Bcrypt
 Tokens → JWT (30-min expiry)
 Database → MongoDB Atlas with auth
 CORS → Only allows Vercel frontend
 .env → Never pushed to GitHub
-
+```
 
 ## Future Enhancements
+```
 1. Add Admin Panel
 2. Export to PDF
 3. Multiple Companies
 4. Email Alerts
 5. Unit Tests
 
-
-🤝 Contributing
-
+```
+### 🤝 Contributing
+```
 1. Fork: https://github.com/Patidarmadhuri/Financial-Dashboard-Project
 
 2. Create branch:
@@ -276,19 +286,21 @@ bash git commit -m "Add new feature"
 git push origin feature/your-feature
 
 4.Open a Pull Request.
-
-Standards:
+```
+#### Standards:
+```
 Python: PEP 8
 React: ESLint
 Screenshots: Add to docs/screenshots/
+```
 
-Author
+### Author
 Madhuri Patidar
 Full-Stack Developer | Data + Design
 
 "Turning complex data into simple decisions."
 
-madhuri.patidar49@gmail.com
+Email ID- madhuri.patidar49@gmail.com
 LinkedIn- https://www.linkedin.com/in/madhuri-fullstack-developer/
 
 License
