@@ -102,7 +102,6 @@ Tools        Postman, MongoDB Compass, GitHub, VS Code
 Environment  Node.js (v16+), Python (3.8+)
 
 
-
 Project Structure
 plaintextFinancial-Dashboard-Project/
 ├── financial-backend/          # Flask API (Render)
@@ -117,6 +116,7 @@ plaintextFinancial-Dashboard-Project/
 ├── docs/                       # Screenshots + API Guide
 └── README.md                   # You're reading it!
 
+```
 
 🚀 Setup Guide (For Developers)
 🔍 Prerequisites
@@ -150,26 +150,17 @@ npm start
 Runs at: http://localhost:3000
 
 
-Environment Variables (Production)
+### Environment Variables (Production)
 
-Key                  Value (in Render/Vercel)
-REACT_APP_API_URL    https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@...
-JWT_SECRET_KEY       96d76fa...
-
-API Reference
-
-Endpoint       Method    Auth   Description
-
-/api/register   POST      No    Create user
-/api/login      POST      No    Get JWT
-/api/dashboard  GET       Yes   Get chart data
-/api/dashboard/ POST      Yes   Save new data
-
-Auth Header:
-textAuthorization: Bearer <your_jwt_token>
+ `Key                  `    `                      `       `Value (in Render/Vercel)` 
+ `REACT_APP_API_URL`   `        `   `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
+ `JWT_SECRET_KEY `    `    `    `96d76fa... `
 
 
-🗄️ Database Setup (MongoDB)
+
+
+
+### 🗄️ Database Setup (MongoDB)
 
 1.Start MongoDB:
 bash mongod --dbpath <your-data-path>
@@ -189,7 +180,7 @@ json POST http://localhost:5000/api/register
 }
 
 
-📡 API Reference
+### 📡 API Reference 
 Explore the API Guide for detailed endpoints, payloads, and Postman examples. Key endpoints:
 
 | Endpoint              | Method | Auth | Description                 |
@@ -236,11 +227,11 @@ CORS → Only allows Vercel frontend
 
 
 ## Future Enhancements
-Add Admin Panel
-Export to PDF
-Multiple Companies
-Email Alerts
-Unit Tests
+1. Add Admin Panel
+2. Export to PDF
+3. Multiple Companies
+4. Email Alerts
+5. Unit Tests
 
 
 🤝 Contributing
