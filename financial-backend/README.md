@@ -49,9 +49,10 @@ Finance teams need a secure and reliable backend to manage and serve financial m
     - [Production (Render)](#production-render)
     - [🔗 API Reference](#-api-reference)
   - [Authentication Endpoints](#authentication-endpoints)
-    - [POST /api/register](#post-apiregister)
+        - [POST /api/register](#post-apiregister)
     - [🔒 Security Considerations](#-security-considerations)
     - [🤝 Contributing](#-contributing)
+      - [🔗 Main README | API Guide](#-main-readme--api-guide)
     - [🔗 Links](#-links-1)
 
 ### 🔗 Links
@@ -88,6 +89,8 @@ financial-backend/
 
 
 ### 🚀 Setup Instructions
+
+```
 Prerequisites
 Python (3.8+): Download
 MongoDB: Download
@@ -123,9 +126,11 @@ bash python app.py
 ➡️ Runs at: http://localhost:5000
 
 Note: Use http://localhost:5000 for local development to avoid SSL errors. For HTTPS, see Security Considerations.
+```
 
 ### Production (Render)
 
+```
 Environment Variables (Set in Render Dashboard):
 
 Key         Value
@@ -134,9 +139,11 @@ MONGO_URI   mongodb+srv://madhuri:Dashboard@cluster0.3ezqwh1.mongodb.net/Financi
 JWT_SECRET_KEY  96d76fa338579b534161c94670f4eb46d0a0232cee45e09dd2304b896dc63d6b
 
 Start Command: gunicorn app:app
+```
 
 ### 🔗 API Reference
 
+```
 See the API Guide for detailed endpoints, payloads, and Postman examples.
 
  Key          endpoints:
@@ -148,11 +155,11 @@ GET           /api/dashboard
  POST         /api/dashboard/
  PUT/DELETE   /api/dashboard/<doc_id>
  : Manage dashboard data (requires Authorization: Bearer <token>).
-
+```
 
 ## Authentication Endpoints
 
-### POST /api/register
+##### POST /api/register
 **Description**: Register a new user.
 **Payload**:
 ```json
@@ -182,6 +189,7 @@ Response:
 
 ### 🔒 Security Considerations
 
+```
 Local Development:
  Use http://localhost:5000 to avoid SSL errors.
  .env excluded via .gitignore.
@@ -194,12 +202,14 @@ Local Development:
 
 
 
+```
 
 
 
 
 ### 🤝 Contributing
 
+```
 1. Fork: https://github.com/Patidarmadhuri/Financial-Dashboard-Project
 
 2. Create branch:
@@ -215,7 +225,9 @@ Standards:
 Code Style: PEP 8 for Python
 Issues: Use GitHub Issues
 
-🔗 Main README | API Guide
+```
+
+#### 🔗 Main README | API Guide
 
 ### 🔗 Links
 

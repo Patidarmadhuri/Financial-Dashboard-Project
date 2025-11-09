@@ -112,12 +112,15 @@ bash npm start
 ```
 
 ### Production (Vercel)
+
+```
 Environment Variable (Set in Vercel Dashboard):
 Key,Value
 REACT_APP_API_URL,https://financial-dashboard-project-l853.onrender.com
 
 Auto-deployed from GitHub
 
+```
 
 
 ### 🔄 How It Works
