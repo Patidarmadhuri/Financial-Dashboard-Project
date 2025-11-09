@@ -72,6 +72,21 @@ graph TD
    2. Charts load → API fetches data from MongoDB Atlas
    3. You see visuals → Interactive, real-time, beautiful
    
+
+
+```mermaid
+graph TD
+    A[User] --> B[React Login]
+    B --> C[Flask /api/login]
+    C --> D[JWT Token]
+    D --> B
+    B --> E[Dashboard]
+    E --> F[GET /api/dashboard]
+    F --> G[Plotly Charts]
+```
+
+
+
 The app follows a three-layer architecture:
 
 **React (Frontend) → Flask (Backend) → MongoDB (Database)**
