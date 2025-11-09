@@ -7,12 +7,12 @@ https://financial-dashboard-project-eta.vercel.app/)
 
 **Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
 
-
-Login Details : 
+**Login Details**:
 {
   "username": "aapl",
   "password": "987654321"
 }
+
 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
@@ -24,6 +24,7 @@ Login Details :
 ![Status](https://img.shields.io/badge/Status-LIVE%20&%20SECURE-success)
 
 ---
+
 
 ## Overview  
 **Turn raw financial data into powerful, real-time insights.**  
@@ -152,33 +153,39 @@ Runs at: http://localhost:3000
 
 ### Environment Variables (Production)
 
- `Key                  `    `                      `       `Value (in Render/Vercel)` 
- `REACT_APP_API_URL`   `        `   `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
- `JWT_SECRET_KEY `    `    `    `96d76fa... `
+ Key             `           `       Value (in Render/Vercel)
+
+ `REACT_APP_API_URL`           `https://financial-dashboard-project-l853.onrender.comMONGO_URImongodb+srv://madhuri:Dashboard@... `
+
+ `JWT_SECRET_KEY `      `96d76fa... `
 
 
 
 
 
-### 🗄️ Database Setup (MongoDB)
 
-1.Start MongoDB:
-bash mongod --dbpath <your-data-path>
+## 🗄️ Database (MongoDB Atlas - Cloud)
 
-2.Create database Financial_dashboard:
-bash use Financial_dashboard
+**No local setup needed** — Everything runs in the **cloud**!
 
-3.Create collections:
-users: {"username": "testuser8", "password": "<hashed_password>"}
-metrics: Plotly JSON (e.g., {"data": [...], "layout": {...}})
+### Already Set Up:
+- **Database**: `Financial_dashboard`
+- **Collections**: `users`, `metrics`
+- **Connection**: Secure via `MONGO_URI` in Render
+- **Test User**: `aapl` / `987654321`
 
-4.Register a test user via Postman:
-json POST http://localhost:5000/api/register
+### How to Add Data (Optional - For Testing)
+
+Use **Postman** or **cURL** to register a new user:
+
+```bash
+POST https://financial-dashboard-project-l853.onrender.com/api/register
+Content-Type: application/json
+
 {
-  "username": "testuser8",
-  "password": "securepassword1238"
+  "username": "newuser",
+  "password": "yourpassword123"
 }
-
 
 ### 📡 API Reference 
 Explore the API Guide for detailed endpoints, payloads, and Postman examples. Key endpoints:
