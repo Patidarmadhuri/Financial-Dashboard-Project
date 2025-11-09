@@ -1,5 +1,7 @@
 # Financial Dashboard Project  
-**Frontend Live Demo**: [https://financial-dashboard-project.vercel.app](https://financial-dashboard-project.vercel.app)  
+**Frontend Live Demo**: [
+https://financial-dashboard-project-eta.vercel.app/](
+https://financial-dashboard-project-eta.vercel.app/)  
 
 **Backend API**: [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com)
 
