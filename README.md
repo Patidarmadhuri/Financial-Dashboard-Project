@@ -253,14 +253,14 @@ json{
 
 ## Security
 ```
-Passwords → Hashed with Bcrypt
-Tokens → JWT (30-min expiry)
-Database → MongoDB Atlas with auth
-CORS → Only allows Vercel frontend
-.env → Never pushed to GitHub
+1. Passwords → Hashed with Bcrypt
+2. Tokens → JWT (30-min expiry)
+3. Database → MongoDB Atlas with auth
+4. CORS → Only allows Vercel frontend
 ```
 
 ## Future Enhancements
+
 ```
 1. Add Admin Panel
 2. Export to PDF
