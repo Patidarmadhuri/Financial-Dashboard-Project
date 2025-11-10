@@ -23,14 +23,15 @@ This file covers the Flask backend, includes ToC links, and references the API G
 
 ## 📘 Overview
 
-Finance teams need a secure and reliable backend to manage and serve financial metrics. The **Flask backend** provides RESTful APIs to store, retrieve, and authenticate users’ dashboard data efficiently. It supports JWT authentication and CRUD operations for metrics, powering the interactive frontend dashboards.
-
-
-**Flask REST API** with:
-- Secure **JWT authentication**
-- Full **CRUD** for dashboard metrics
+**Full REST API** with:
+- **JWT authentication** (login/register)
+- **CRUD operations** on dashboard data
+- **Public `/api/charts`** (used by frontend)
 - **MongoDB Atlas** (cloud database)
-- Serves **Plotly-ready JSON**
+
+> **Frontend uses only `/api/charts` (public)**  
+> **Use `/api/register`, `/api/login` for learning & testing**
+
 
 ---
 
@@ -143,18 +144,22 @@ Start Command: gunicorn app:app
 
 ### 🔗 API Reference
 
+
 ```
 See the API Guide for detailed endpoints, payloads, and Postman examples.
 
- Key          endpoints:
+ Method     Endpoint          Auth       Description
 
-POST          /api/register
-POST          /api/login: Authentication (no JWT required).
-GET           /api/dashboard
- GET          /api/dashboards
- POST         /api/dashboard/
- PUT/DELETE   /api/dashboard/<doc_id>
- : Manage dashboard data (requires Authorization: Bearer <token>).
+GET           /api/charts      No        Public — 5 Plotly charts
+POST          /api/register    No        register user
+POST          /api/login       no        Get JWT
+GET           /api/dashboard   Yes       Protected data
+GET           /api/dashboards  Yes      All entries
+POST          /api/dashboard/  Yes      create
+PUT/DELETE    /api/dashboard/
+              <doc_id>         Yes     update, delete
+
+ See API Guide for full details
 ```
 
 ## Authentication Endpoints
@@ -198,7 +203,6 @@ Local Development:
 1. Passwords → Bcrypt hashed
 2. JWT → 30-min expiry
 3. CORS → Only Vercel frontend
-4. .env → Never in GitHub
 
 
 
