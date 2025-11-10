@@ -13,12 +13,7 @@
 https://financial-dashboard-project-eta.vercel.app/](
 https://financial-dashboard-project-eta.vercel.app/) 
 
-**Login with**:
-
-{
-  "username": "aapl",
-  "password": "987654321"
-}
+> **No login required** — Just open and explore!
 
 
 
@@ -26,10 +21,10 @@ https://financial-dashboard-project-eta.vercel.app/)
 
 Interactive **React dashboard** with:
 
-- **Secure login & registration**  
-- **Real-time Plotly.js charts** (zoom, filter, dual-axis)  
-- **CCP**, **LTD**, **Revenue** trends for **AAPL, AMZN, KO**  
-- **Live data** from **MongoDB Atlas** via Flask API
+- **5 Plotly.js charts** (zoom, hover, export)
+- **CCP, LTD, Debt Coverage, Liquid Assets**
+- **Real data** from MongoDB Atlas
+- **Public access** — no auth
 
 ---
 
@@ -133,22 +128,17 @@ Auto-deployed from GitHub
 Data Flow:
 ```mermaid
 graph TD
-    A[User] --> B[React Login]
-    B --> C[Flask /api/login]
-    C --> D[JWT Token]
+    A[Open Dashboard] --> B[React Loads]
+    B --> C[GET /api/charts]
+    C --> D[Flask API]
+    D --> E[MongoDB Atlas]
+    E --> D
     D --> B
-    B --> E[Dashboard]
-    E --> F[GET /api/dashboard]
-    F --> G[Plotly Charts]
+    B --> F[4 Interactive Charts]
 ```
 
 ### 📸 Screenshots
 
-
-Login Screen: Secure login form.
-**Login Screen** 
-
-<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Login" width="600">
 
 **Dashboard** 
 
