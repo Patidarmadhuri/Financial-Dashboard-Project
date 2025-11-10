@@ -8,11 +8,6 @@ https://financial-dashboard-project-eta.vercel.app/)
 **Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
 
 
-Login Details : 
-{
-  "username": "aapl",
-  "password": "987654321"
-}
 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
@@ -37,7 +32,7 @@ No more Excel chaos — just **clear visuals** for **Cash Position (CCP)**, **Lo
 ## Live Links  
 | Service | URL |
 |-------|-----|
-| **Frontend (Dashboard)** | [https://financial-dashboard-project.vercel.app](https://financial-dashboard-project.vercel.app) |
+| **Frontend (Dashboard)** | [https://financial-dashboard-project-eta.vercel.app](https://financial-dashboard-project-eta.vercel.app) |
 | **Backend (API)** | [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com) |
 | **Health Check** | [https://financial-dashboard-project-l853.onrender.com/health](https://financial-dashboard-project-l853.onrender.com/health) |
 
@@ -154,7 +149,7 @@ python -m venv venv
 pip install -r requirements.txt
 python app.py
 
-Runs at: http://localhost:5000
+Runs at: "http://localhost:5000"
 
 ```
 ## Frontend (React)
@@ -163,7 +158,7 @@ bash
 cd finacial-dashboard
 npm install
 npm start
-Runs at: http://localhost:3000
+Runs at: "http://localhost:3000"
 ```
 
 ### Environment Variables (Production)
@@ -225,7 +220,7 @@ Auth Header (for protected routes):
 plaintext  Authorization: Bearer <your_token>
 
 Example Login Payload:
-json POST http://localhost:5000/api/login
+json POST " http://localhost:5000/api/login "
 {
   "username": "testuser8",
   "password": "securepassword1238"
