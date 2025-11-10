@@ -26,7 +26,17 @@ load_dotenv()
 
 @app.route("/")
 def home():
-    return jsonify({"message": "Backend is running! Use /api routes."})
+    return jsonify({
+        "message": "Financial Dashboard API",
+        "status": "LIVE",
+        "docs": "/docs",
+        "endpoints": {
+            "public": "/api/charts",
+            "auth": "/api/register, /api/login",
+            "protected": "/api/dashboard"
+        },
+        "frontend": "https://financial-dashboard-project-eta.vercel.app"
+    }), 200
 
 # JWT Configuration
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY') or 'temporary-fallback-key-123'
