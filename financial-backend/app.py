@@ -183,6 +183,27 @@ def delete_dashboard(doc_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+@app.route('/api/charts', methods=['GET'])
+def get_charts():
+    charts = {}
+    for doc in db.charts.find():
+        chart_id = str(doc['_id'])
+        charts[chart_id] = {
+            "data": doc.get("data", []),
+            "layout": doc.get("layout", {}),
+            "config": doc.get("config", {})
+        }
+    return jsonify(charts)
+
+@app.route('/companies', methods=['GET'])
+def get_companies():
+    companies = sorted(set(doc.get('CompanyName') for doc in db.metrics.find({}, {'CompanyName': 1})))
+    return jsonify(companies)
+
+@app.route('/quarters', methods=['GET'])
+def get_quarters():
+    quarters = sorted(set(doc.get('ReportQuarter') for doc in db.metrics.find({}, {'ReportQuarter': 1})))
+    return jsonify(quarters)
 
 # Health check
 @app.route("/health")

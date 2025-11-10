@@ -22,11 +22,11 @@ https://financial-dashboard-project-eta.vercel.app/)
 ---
 
 ## Overview  
-**Turn raw financial data into powerful, real-time insights.**  
+**Turn raw financial data into powerful, real-time insights.**   
 
-The **Financial Dashboard** helps finance teams, analysts, and decision-makers **see trends instantly** through **interactive charts**, **secure login**, and **cloud-powered data**.  
+The **Financial Resilience Dashboard** displays **4 interactive charts** built from real company data (CCP, LTD, Debt Coverage, Liquid Assets) — **no login required**.
 
-No more Excel chaos — just **clear visuals** for **Cash Position (CCP)**, **Long-Term Debt (LTD)**, and **Revenue Growth** across companies like **AAPL**, **AMZN**, and **KO**.
+Perfect for analysts, students, or anyone exploring financial trends across **AAPL, AMZN, KO**, and more.
 
 ---
 
@@ -35,6 +35,7 @@ No more Excel chaos — just **clear visuals** for **Cash Position (CCP)**, **Lo
 |-------|-----|
 | **Frontend (Dashboard)** | [https://financial-dashboard-project-eta.vercel.app](https://financial-dashboard-project-eta.vercel.app) |
 | **Backend (API)** | [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com) |
+| **Charts API** | [https://financial-dashboard-project-l853.onrender.com/api/charts](https://financial-dashboard-project-l853.onrender.com/api/charts) |
 | **Health Check** | [https://financial-dashboard-project-l853.onrender.com/health](https://financial-dashboard-project-l853.onrender.com/health) |
 
 > **Try it now**: Register → Login → Explore live charts!
@@ -42,12 +43,11 @@ No more Excel chaos — just **clear visuals** for **Cash Position (CCP)**, **Lo
 ---
 
 ## Features  
-- **Secure Login & Registration** – JWT + password hashing  
-- **Interactive Charts** – Plotly.js with zoom, filter, and dual-axis  
-- **Real-Time KPIs** – Cash, Debt, Revenue, Trends  
-- **Cloud Database** – MongoDB Atlas (fully hosted, secure)  
-- **REST API** – Full CRUD for data management  
-- **Live Deployment** – Vercel (frontend) + Render (backend)  
+- **5 Interactive Charts** – Plotly.js with zoom, hover, and export  
+- **Public Access** – No login, no JWT  
+- **Real Data** – Sourced from MongoDB Atlas (CCP, LTD, ratios, heatmaps)  
+- **Responsive Design** – Works on mobile, tablet, desktop  
+- **Live Deployment** – Vercel + Render (auto-deploy on push)
 
 ---
 ## 🧠 How It Works
@@ -208,6 +208,7 @@ Explore the API Guide for detailed endpoints, payloads, and Postman examples. Ke
 
 | Endpoint              | Method | Auth | Description                 |
 | --------------------- | ------ | ---- | --------------------------- |
+| `/api/charts`         | GET    | ❌    | Returns all 4 charts as Plotly JSON         |
 | `/api/register`       | POST   | ❌    | Register a new user         |
 | `/api/login`          | POST   | ❌    | Authenticate and return JWT |
 | `/api/dashboard`      | GET    | ✅    | Get the latest dashboard    |
@@ -235,12 +236,9 @@ json{
 ```
 
 ## Screenshots
- 
-**Login Screen** 
-<img src="docs\screenshots\Frontend\dashboard_loginpage_Screenshot.png" alt="Login" width="600">
 
+**Financial Resilience Dashboard**
 
-**Dashboard**  
 <img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
 
 🔗 Main README | API Guide
@@ -264,11 +262,10 @@ json{
 ## Future Enhancements
 
 ```
-1. Add Admin Panel
-2. Export to PDF
-3. Multiple Companies
-4. Email Alerts
-5. Unit Tests
+1. Add company filter dropdown
+2. Add quarter/year selector
+3. Export charts to PDF
+4. Add dark mode toggle
 
 ```
 ### 🤝 Contributing
