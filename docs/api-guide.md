@@ -34,6 +34,30 @@ All endpoints use:
   - [📌 Endpoints Overview](#-endpoints-overview)
     - [🔗 Links](#-links-1)
 
+## API Root & Docs
+
+| URL | Purpose |
+|-----|--------|
+| [`/`](https://financial-dashboard-project-l853.onrender.com/) | **API Welcome Message** |
+| [`/docs`](https://financial-dashboard-project-l853.onrender.com/docs) | **Full API Documentation (JSON)** |
+| [`/health`](https://financial-dashboard-project-l853.onrender.com/health) | **Health Check** |
+
+
+
+### Example: `/` (Root)
+```json
+{
+  "message": "Financial Dashboard API",
+  "status": "LIVE",
+  "frontend": "https://financial-dashboard-project-eta.vercel.app",
+  "endpoints": {
+    "public": "/api/charts",
+    "auth": "/api/register, /api/login",
+    "protected": "/api/dashboard"
+  },
+  "docs": "/docs"
+}
+```
 
 ### 🔗 Links
 
@@ -263,6 +287,7 @@ Save as Financial-Dashboard-API.postman_collection.json → Import in Postman
 
 | Method | Endpoint                     | Description                          | Authorization |
 |--------|------------------------------|--------------------------------------|---------------|
+| GET   | `/api/charts`              | Public — 5 Plotly charts                | ❌ No         |
 | POST   | `/api/register`              | Register a new user                 | ❌ No         |
 | POST   | `/api/login`                 | Authenticate and get JWT token      | ❌ No         |
 | GET    | `/api/dashboard`             | Fetch latest dashboard data         | ✅ Yes        |
@@ -275,16 +300,113 @@ Save as Financial-Dashboard-API.postman_collection.json → Import in Postman
 ```plaintext
 Authorization: Bearer <token-from-/api/login>
 
+/api/charts (Public)
+httpGET https://financial-dashboard-project-l853.onrender.com/api/charts
+→ Returns 5 Plotly JSON objects (used by frontend)
+
+
+/api/dashboard (Protected)
+httpGET /api/dashboard
+Authorization: Bearer <token>
+→ Returns latest dashboard JSON
+
+```
+#### Postman Collection (Import This)
+Save as: Financial-Dashboard-API.postman_collection.json
+```
+{
+  "info": {
+    "name": "Financial Dashboard API",
+    "description": "Full API for testing register, login, CRUD, and charts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Root API",
+      "request": {
+        "method": "GET",
+        "url": "https://financial-dashboard-project-l853.onrender.com/"
+      }
+    },
+    {
+      "name": "2. API Docs",
+      "request": {
+        "method": "GET",
+        "url": "https://financial-dashboard-project-l853.onrender.com/docs"
+      }
+    },
+    {
+      "name": "3. Register User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"newuser\",\n  \"password\": \"pass123456\"\n}"
+        },
+        "url": "https://financial-dashboard-project-l853.onrender.com/api/register"
+      }
+    },
+    {
+      "name": "4. Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"aapl\",\n  \"password\": \"987654321\"\n}"
+        },
+        "url": "https://financial-dashboard-project-l853.onrender.com/api/login"
+      }
+    },
+    {
+      "name": "5. Get Charts (Public)",
+      "request": {
+        "method": "GET",
+        "url": "https://financial-dashboard-project-l853.onrender.com/api/charts"
+      }
+    },
+    {
+      "name": "6. Get Dashboard (JWT)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "url": "https://financial-dashboard-project-l853.onrender.com/api/dashboard"
+      }
+    }
+  ],
+  "variable": [
+    { "key": "token", "value": "", "type": "string" }
+  ]
+}
+
 ```
 
+### How to Use:
+```
+Import in Postman
+Run Login → Copy token
+Paste into {{token}} variable
+Run Get Dashboard
+```
 
 ### 🧠 Tips for Analysts
 ```
-Frontend uses: /api/dashboard (latest only)
+Frontend uses: /api/charts (public)
 Use /api/dashboards to see all entries
-MongoDB Atlas: View Live Data
-JWT expires in 30 mins — Re-login if needed
+JWT expires in 30 mins → Re-login
 CORS: Only allows Vercel frontend
+
+Test Users:
+text
+aapl → 987654321
+amazon2 → hello123456
 ```
 
 ### 🔗 Links
