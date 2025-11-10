@@ -8,7 +8,7 @@ https://financial-dashboard-project-eta.vercel.app/)
 
 **Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
 
-
+> **Just open the link — no login required!**
 
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
@@ -72,13 +72,13 @@ graph TD
 
 ```mermaid
 graph TD
-    A[User] --> B[React Login]
-    B --> C[Flask /api/login]
-    C --> D[JWT Token]
+    A[User Opens Dashboard] --> B[React Frontend<br/>on Vercel]
+    B --> C[GET /api/charts]
+    C --> D[Flask Backend<br/>on Render]
+    D --> E[MongoDB Atlas<br/>Cloud]
+    E --> D
     D --> B
-    B --> E[Dashboard]
-    E --> F[GET /api/dashboard]
-    F --> G[Plotly Charts]
+    B --> F[5 Interactive<br/>Plotly Charts]
 ```
 
 
