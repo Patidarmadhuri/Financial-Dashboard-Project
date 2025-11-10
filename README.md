@@ -247,8 +247,8 @@ json{
 
 ### 🔗 Links
 
-- [Frontend README](../financial-dashboard/README.md)  
-- [Backend README](../financial-backend/README.md)
+- [Frontend README](../Financial-Dashboard-Project/financial-dashboard/README.md)  
+- [Backend README](../Financial-Dashboard-Project/financial-backend/README.md)
 - [API Guide](../Financial-Dashboard-Project/docs/api-guide.md)
   
 
