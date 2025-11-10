@@ -248,10 +248,11 @@ json{
 
 - [Frontend README](../financial-dashboard/README.md)  
 - [Backend README](../financial-backend/README.md)  
-- [API Guide](../docs/api-guide.md)
+- [API Guide](../Financial-Dashboard-Project/docs/api-guide.md)
   
 
-## Security
+### Security
+
 ```
 1. Passwords → Hashed with Bcrypt
 2. Tokens → JWT (30-min expiry)
