@@ -68,7 +68,7 @@ Build your own dashboards in Excel, Python, Power BI
 Import sample data from data/sample_metrics.json
 
 # Developers - 
-Full-stack app: React + Node.js + Express + MongoDB
+Full-stack app: React + Flask + MongoDB
 Clear folder structure
 Easy environment setup (see below)
 
