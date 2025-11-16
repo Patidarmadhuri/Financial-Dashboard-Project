@@ -220,9 +220,9 @@ bash
 }
 
 ```
-##### What You'll See (No Skills Needed)
+##### What You'll See 
 
-**Public access** – Open demo, explore 5 interactive charts from real data (2018-2023, 12 companies: AAPL, AMZN, KO + more). Hover/zoom for details.
+**Public access** – Open demo, explore 4 interactive charts from real data (2018-2023, 12 companies: AAPL, AMZN, KO + more). Hover/zoom for details.
 
 | Chart | Type | Shows | Sample (AAPL 2023Q4) |
 |-------|------|-------|---------------------|
