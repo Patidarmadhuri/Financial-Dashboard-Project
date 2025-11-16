@@ -7,7 +7,7 @@
 
 ---
 
-## Live Demo
+### Live Demo
 
 **Frontend Live Demo**: [
 https://financial-dashboard-project-eta.vercel.app/](
@@ -16,8 +16,7 @@ https://financial-dashboard-project-eta.vercel.app/)
 > **No login required** — Just open and explore!
 
 
-
-## Overview
+### Overview
 
 Interactive **React dashboard** with:
 
@@ -31,17 +30,19 @@ Interactive **React dashboard** with:
 ## 📖 Table of Contents
 
 - [🌐Financial Dashboard Frontend](#financial-dashboard-frontend)
-  - [Live Demo](#live-demo)
-  - [Overview](#overview)
+    - [Live Demo](#live-demo)
+    - [Overview](#overview)
   - [📖 Table of Contents](#-table-of-contents)
     - [🔗 Links](#-links)
   - [🎯 Purpose](#-purpose)
-  - [🛠️ Tech Stack](#️-tech-stack)
-  - [📂 Directory Structure](#-directory-structure)
+    - [🛠️ Tech Stack](#️-tech-stack)
+    - [📂 Directory Structure](#-directory-structure)
     - [🚀 Setup Instructions](#-setup-instructions)
-    - [Production (Vercel)](#production-vercel)
-    - [🔄 How It Works](#-how-it-works)
+      - [Production (Vercel)](#production-vercel)
+      - [🔄 How It Works](#-how-it-works)
     - [📸 Screenshots](#-screenshots)
+      - [🤝 Contributing](#-contributing)
+          - [Standards:](#standards)
     - [🔗 Links](#-links-1)
   
 
@@ -55,7 +56,7 @@ Interactive **React dashboard** with:
 
 The frontend provides a user-friendly interface for financial teams to log in, fetch data from the Flask backend, and visualize metrics via interactive Plotly.js charts.
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 | Component       | Technology                     |
 |-----------------|--------------------------------|
@@ -64,7 +65,7 @@ The frontend provides a user-friendly interface for financial teams to log in, f
 | **Deployment**    | Vercel (Free Tier)       |
 | **API** | Flask on Render               |
 
-## 📂 Directory Structure
+### 📂 Directory Structure
 
 ```plaintext
 frontend/
@@ -106,7 +107,7 @@ bash npm start
 
 ```
 
-### Production (Vercel)
+#### Production (Vercel)
 
 ```
 Environment Variable (Set in Vercel Dashboard):
@@ -117,8 +118,7 @@ Auto-deployed from GitHub
 
 ```
 
-
-### 🔄 How It Works
+#### 🔄 How It Works
 ```
 1. Login: Users authenticate via a React form, sending POST to /api/login, storing JWT in localStorage.
 2. Data Fetch: Sends GET to /api/dashboard with Authorization: Bearer <token>.
@@ -142,13 +142,25 @@ graph TD
 
 **Dashboard** 
 
-Dashboard: Interactive Plotly chart for CCP and LTD trends.
+1. CCP & LTD by Company
+   
+<img src="../docs\screenshots\Frontend\fig1_CCP_and_Ltd_by_Company.png" alt="Dashboard" width="600">
 
-<img src="../docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
+2. Debt Coverage Ratio
+   
+<img src="../docs\screenshots\Frontend\fig2_Ration_CCP_LTD_By_Companies.png" alt="Dashboard" width="600">
 
+3. Financial Resilience Heatmap
+   
+<img src="../docs\screenshots\Frontend\fig3_Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
 
+4. Debt vs Liquid Assets (all)
+   
+<img src="../docs\screenshots\Frontend\fig4_Dept_VS_Liquid_Assets.png" alt="Dashboard" width="600">
 
-🤝 Contributing
+---
+
+#### 🤝 Contributing
 ```
 1. Fork: https://github.com/Patidarmadhuri/docs\screenshots\Frontend\Financial_Dashbord_Screenshot.pngFinancial-Dashboard-Project
 
@@ -162,7 +174,7 @@ git push origin feature/frontend-your-feature
 1. Open a Pull Request.
 ```
 
-Standards:
+###### Standards:
 ```
 Code Style: ESLint for React
 Issues: Use GitHub Issues
