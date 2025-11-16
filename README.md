@@ -6,7 +6,6 @@ https://financial-dashboard-project-eta.vercel.app/)
 
 **Backend API**: [https://financial-dashboard-project-l853.onrender.com](https://financial-dashboard-project-l853.onrender.com)
 
-**Database MongoDB Atlas**: [https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard](https://cloud.mongodb.com/v2/68ee7619d69c31726264c46f#/explorer/68ee7670e30b266a2ee305ca/financial_dashboard)
 
 > **Just open the link — no login required!**
 
@@ -29,8 +28,40 @@ The **Financial Resilience Dashboard** displays **4 interactive charts** built f
 Perfect for analysts, students, or anyone exploring financial trends across **AAPL, AMZN, KO**, and more.
 
 ---
+#### 🧩 What This Dashboard Shows
 
-## Live Links  
+-> Revenue
+-> Expenses
+-> Profit
+-> Debt
+-> Cash flow
+-> KPI comparisons
+-> Interactive line, bar, and pie charts
+-> Hover, zoom, toggle series, filter by period
+
+---
+
+#### 👥 Who This Project Is For
+
+```
+# Non-technical users - 
+Just open the live demo link and explore the charts
+No install, no login
+Everything is point-and-click
+
+# Data analysts - 
+Fetch clean JSON from the API
+Build your own dashboards in Excel, Python, Power BI
+Import sample data from data/sample_metrics.json
+
+# Developers - 
+Full-stack app: React + Node.js + Express + MongoDB
+Clear folder structure
+Easy environment setup (see below)
+
+```
+---
+### Live Links  
 | Service | URL |
 |-------|-----|
 | **Frontend (Dashboard)** | [https://financial-dashboard-project-eta.vercel.app](https://financial-dashboard-project-eta.vercel.app) |
@@ -43,7 +74,7 @@ Perfect for analysts, students, or anyone exploring financial trends across **AA
 ---
 
 ## Features  
-- **5 Interactive Charts** – Plotly.js with zoom, hover, and export  
+- **4 Interactive Charts** – Plotly.js with zoom, hover, and export  
 - **Public Access** – No login, no JWT  
 - **Real Data** – Sourced from MongoDB Atlas (CCP, LTD, ratios, heatmaps)  
 - **Responsive Design** – Works on mobile, tablet, desktop  
@@ -189,7 +220,6 @@ Runs at: "http://localhost:3000"
 
 Use **Postman** or **cURL** to register a new user:
 
-
 POST https://financial-dashboard-project-l853.onrender.com/api/register
 Content-Type: application/json
 bash
@@ -198,9 +228,7 @@ bash
   "password": "yourpassword123"
 }
 
-
 ```
-
 
 ### 📡 API Reference 
 
@@ -235,22 +263,21 @@ json{
 
 ```
 
-## Screenshots
+### Screenshots
 
 **Financial Resilience Dashboard**
 
 <img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
 
-🔗 Main README | API Guide
 
-### 🔗 Links
+#### 🔗 Links
 
 - [Frontend README](financial-dashboard/README.md)  
 - [Backend README](financial-backend/README.md)  
 - [API Guide](docs/api-guide.md)
   
 
-### Security
+#### Security
 
 ```
 1. Passwords → Hashed with Bcrypt
@@ -268,6 +295,59 @@ json{
 4. Add dark mode toggle
 
 ```
+
+#### 🚀 Developer Quickstart
+
+```
+1. Clone the project
+git clone https://github.com/Patidarmadhuri/Financial-Dashboard-Project
+cd Financial-Dashboard-Project
+
+2. Environment Variables
+Create .env in backend:
+MONGO_URI=
+JWT_SECRET_KEY=
+
+Create .env in frontend:
+REACT_APP_API_URL=
+
+Do not commit secrets. Use .env.example for sharing variable names.
+
+3. Install dependencies
+Backend
+cd backend
+npm install
+
+Frontend
+cd ../frontend
+npm install
+
+4. Run the project locally
+Backend
+npm start
+
+Server runs at: http://localhost:5000
+
+Frontend
+npm start
+
+App runs at: http://localhost:3000
+
+```
+
+#### 💾 Sample Data for Analysts
+
+```
+You’ll find example financial metrics in:
+/data/sample_metrics.json
+
+Import into:
+Excel
+Python (Pandas)
+Power BI
+Tableau
+```
+
 ### 🤝 Contributing
 ```
 1. Fork: https://github.com/Patidarmadhuri/Financial-Dashboard-Project

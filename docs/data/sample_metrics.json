@@ -1,0 +1,45 @@
+{
+  "revenue": [
+    { "year": 2020, "value": 40000 },
+    { "year": 2021, "value": 52000 },
+    { "year": 2022, "value": 61000 },
+    { "year": 2023, "value": 68000 }
+  ],
+
+  "expenses": [
+    { "year": 2020, "value": 25000 },
+    { "year": 2021, "value": 30000 },
+    { "year": 2022, "value": 34000 },
+    { "year": 2023, "value": 39000 }
+  ],
+
+  "profit": [
+    { "year": 2020, "value": 15000 },
+    { "year": 2021, "value": 22000 },
+    { "year": 2022, "value": 27000 },
+    { "year": 2023, "value": 29000 }
+  ],
+
+  "cashFlow": [
+    { "month": "Jan", "value": 6000 },
+    { "month": "Feb", "value": 5200 },
+    { "month": "Mar", "value": 7000 },
+    { "month": "Apr", "value": 6500 },
+    { "month": "May", "value": 6800 },
+    { "month": "Jun", "value": 7200 }
+  ],
+
+  "debt": [
+    { "year": 2020, "value": 18000 },
+    { "year": 2021, "value": 17500 },
+    { "year": 2022, "value": 16500 },
+    { "year": 2023, "value": 15000 }
+  ],
+
+  "kpi": {
+    "grossMargin": 0.42,
+    "netMargin": 0.25,
+    "debtToEquity": 0.58,
+    "returnOnInvestment": 0.19
+  }
+}
