@@ -284,8 +284,17 @@ Tableau
 
 **Financial Resilience Dashboard**
 
-<img src="docs\screenshots\Frontend\Financial_Dashbord_Screenshot.png" alt="Dashboard" width="600">
+1. CCP & LTD by Company
+ <img src="docs\screenshots\Frontend\fig1_CCP_and_Ltd_by_Company.png" alt="Dashboard" width="600">
+   
+1. Debt Coverage Ratio
+ <img src="docs\screenshots\Frontend\fig2_Ration_CCP_LTD_By_Companies.png" alt="Dashboard" width="600">
+   
+1. Financial Resilience Heatmap
+   <img src="docs\screenshots\Frontend\fig3_Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
 
+2. Debt vs Liquid Assets (all)
+   <img src="docs\screenshots\Frontend\fig4_Dept_VS_Liquid_Assets.png" alt="Dashboard" width="600">
 
 #### 🔗 Links
 
