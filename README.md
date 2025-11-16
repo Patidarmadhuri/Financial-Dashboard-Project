@@ -220,6 +220,32 @@ bash
 }
 
 ```
+##### What You'll See (No Skills Needed)
+
+**Public access** – Open demo, explore 5 interactive charts from real data (2018-2023, 12 companies: AAPL, AMZN, KO + more). Hover/zoom for details.
+
+| Chart | Type | Shows | Sample (AAPL 2023Q4) |
+|-------|------|-------|---------------------|
+| **CCP Trends** | Line | Cash conversion over quarters | $73,100M |
+| **LTD Trends** | Line | Long-term debt growth | $106,042M |
+| **CCP/LTD Ratio** | Line/Heatmap | Coverage balance (0-2.65 scale) | 0.69 |
+| **Debt vs. Assets** | Scatter | Debt (Y) vs. Cash (X), size=risk | Bubble ~22 |
+| **Company Overview** | Scatter | Medians/benchmarks by ticker | CCP median: $9,707M |                               (Data: Millions USD, MongoDB-sourced.)
+-----
+
+
+##### For Analysts & Devs
+**Sample Metrics (AAPL 2018Q4):**
+```json
+{
+  "ticker": "AAPL",
+  "quarter": "2018Q4",
+  "ccp": 86427,
+  "ltd": 102761,
+  "ratio": 0.84
+}
+```
+
 
 #### 📡 API Reference 
 
@@ -345,12 +371,12 @@ git push origin feature/your-feature
 
 ```
 #### Code Style Standards:
-```
+
 
 Python: Follow PEP 8
 React: Use ESLint rules
 Add screenshots for new UI features in /docs/screenshots/
-```
+
 
 ### Author
 Madhuri Patidar
