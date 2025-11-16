@@ -39,6 +39,19 @@ Perfect for analysts, students, or anyone exploring financial trends across **AA
 -> Interactive line, bar, and pie charts
 -> Hover, zoom, toggle series, filter by period
 ```
+
+### For Data Analysts & Developers
+###### Key Metrics (Sample from AAPL, Q4 2023)
+```json
+{
+  "ticker": "AAPL",
+  "quarter": "2023Q4",
+  "ccp": 45.2,
+  "ltd": 109000,
+  "liquid_assets": 162000,
+  "debt_coverage": 1.49
+}
+```
 ---
 
 #### 👥 Who This Project Is For
