@@ -29,7 +29,7 @@ Perfect for analysts, students, or anyone exploring financial trends across **AA
 
 ---
 #### 🧩 What This Dashboard Shows
-
+```
 -> Revenue
 -> Expenses
 -> Profit
@@ -38,7 +38,7 @@ Perfect for analysts, students, or anyone exploring financial trends across **AA
 -> KPI comparisons
 -> Interactive line, bar, and pie charts
 -> Hover, zoom, toggle series, filter by period
-
+```
 ---
 
 #### 👥 Who This Project Is For
@@ -370,12 +370,15 @@ Screenshots: Add to docs/screenshots/
 
 ### Author
 Madhuri Patidar
+```
 Full-Stack Developer | Data + Design
 
 "Turning complex data into simple decisions."
 
 Email ID- madhuri.patidar49@gmail.com
 LinkedIn- https://www.linkedin.com/in/madhuri-fullstack-developer/
+
+```
 
 License
 MIT License © 2025 Madhuri Patidar
