@@ -27,15 +27,26 @@ Interactive **React dashboard** with:
 
 ---
 
+### What It Does
+
+Beautiful, fully interactive financial dashboard showing **cash reserves (CCP) vs long-term debt (LTD)** for major companies (AAPL, AMZN, MSFT, TSLA, KO, etc.) using real quarterly data (2018–2023).
+
+- 4 interactive Plotly charts (zoom, hover, export, double-click reset)  
+- Modern 2025 UI with glassmorphism, gradients, and smooth tabs  
+- Mobile & desktop responsive
+
+---
+
 ## 📖 Table of Contents
 
 - [🌐Financial Dashboard Frontend](#financial-dashboard-frontend)
     - [Live Demo](#live-demo)
     - [Overview](#overview)
+    - [What It Does](#what-it-does)
   - [📖 Table of Contents](#-table-of-contents)
     - [🔗 Links](#-links)
   - [🎯 Purpose](#-purpose)
-    - [🛠️ Tech Stack](#️-tech-stack)
+    - [🛠️Tech Stack](#️tech-stack)
     - [📂 Directory Structure](#-directory-structure)
     - [🚀 Setup Instructions](#-setup-instructions)
       - [Production (Vercel)](#production-vercel)
@@ -56,14 +67,21 @@ Interactive **React dashboard** with:
 
 The frontend provides a user-friendly interface for financial teams to log in, fetch data from the Flask backend, and visualize metrics via interactive Plotly.js charts.
 
-### 🛠️ Tech Stack
 
-| Component       | Technology                     |
-|-----------------|--------------------------------|
-| **Frontend**    | React, Plotly.js, Axios        |
-| **Environment** | Node.js (v16+)                 |
-| **Deployment**    | Vercel (Free Tier)       |
-| **API** | Flask on Render               |
+---
+
+### 🛠️Tech Stack
+
+| Part          | Tech                          |
+|---------------|-------------------------------|
+| Framework     | React 18                      |
+| Charts        | Plotly.js                     |
+| Styling       | Tailwind CSS                  |
+| API Calls     | Axios                         |
+| Deployment    | Vercel (auto-deploy)          |
+| Backend API   | Flask on Render               |
+
+---
 
 ### 📂 Directory Structure
 
@@ -71,7 +89,7 @@ The frontend provides a user-friendly interface for financial teams to log in, f
 frontend/
 ├── src/
 │   ├── components/
-│   │   ├── DashboardChart.js # Login and dashboard display
+│   │   ├── DashboardChart.jsx # Login and dashboard display
 │   ├── App.js               # Main React component
 ├── public/
 ├── package.json             # Node.js dependencies
@@ -144,19 +162,19 @@ graph TD
 
 1. CCP & LTD by Company
    
-<img src="../docs\screenshots\Frontend\fig1_CCP_and_Ltd_by_Company.png" alt="Dashboard" width="600">
+<img src="../docs\screenshots\Dashboard-Screenshot\CCP_AND_LTD_BY_Company.png" alt="Dashboard" width="600">
 
 2. Debt Coverage Ratio
    
-<img src="../docs\screenshots\Frontend\fig2_Ration_CCP_LTD_By_Companies.png" alt="Dashboard" width="600">
+<img src="../docs\screenshots\Dashboard-Screenshot\Debt_coverage_Ratio.png" alt="Dashboard" width="600">
 
 3. Financial Resilience Heatmap
    
-<img src="../docs\screenshots\Frontend\fig3_Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
+<img src="../docs\screenshots\Dashboard-Screenshot\Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
 
 4. Debt vs Liquid Assets (all)
    
-<img src="../docs\screenshots\Frontend\fig4_Dept_VS_Liquid_Assets.png" alt="Dashboard" width="600">
+<img src="../docs\screenshots\Dashboard-Screenshot\Dept_vs_Liquid-Assets.png" alt="Dashboard" width="600">
 
 ---
 

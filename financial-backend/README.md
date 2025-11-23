@@ -20,6 +20,16 @@ This file covers the Flask backend, includes ToC links, and references the API G
 **Health Check**: [https://financial-dashboard-project-l853.onrender.com/health](https://financial-dashboard-project-l853.onrender.com/health)
 
 ---
+---
+
+### Features
+
+- Public endpoint `/api/charts` → returns 4 ready-to-use Plotly JSON charts  
+- JWT authentication (register/login) — included for learning  
+- MongoDB Atlas cloud database (no local setup needed)  
+- Fully deployed on Render (auto-deploy on push)
+
+---
 
 ## 📘 Overview
 
@@ -40,6 +50,7 @@ This file covers the Flask backend, includes ToC links, and references the API G
 - [Backend README (`financial-backend/README.md`)](#backend-readme-financial-backendreadmemd)
 - [💻 Financial Dashboard Backend](#-financial-dashboard-backend)
   - [Live API](#live-api)
+    - [Features](#features)
   - [📘 Overview](#-overview)
   - [📖 Table of Contents](#-table-of-contents)
     - [🔗 Links](#-links)
