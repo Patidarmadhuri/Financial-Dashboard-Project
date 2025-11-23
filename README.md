@@ -1,5 +1,8 @@
 # Financial Dashboard Project  
 
+**Can major companies survive the next crisis?**  
+See instantly who’s **bulletproof** — and who’s **one shock away**.
+
 ### 🔗 Live Demo  
 
 **Frontend**: [https://financial-dashboard-project-eta.vercel.app/](https://financial-dashboard-project-eta.vercel.app/)  
@@ -26,19 +29,31 @@ The **Financial Resilience Dashboard** displays **4 interactive charts** built f
 Perfect for analysts, students, or anyone exploring financial trends across **AAPL, AMZN, KO**, and more.
 
 ---
-#### 🧩 What This Dashboard Shows
+### What You’ll See in One Glance
 
-This dashboard shows key financial trends for multiple companies.  
-It loads four charts directly from a live Flask API:
+Four fully interactive Plotly charts analyzing **cash reserves (CCP)** vs **long-term debt (LTD)** for major companies (AAPL, AMZN, MSFT, TSLA, KO, etc.) from 2018–2023.
 
-- **CCP (Capital Consumption Pattern)**
-- **LTD (Long-Term Debt)**
-- **Liquid Assets**
-- **Debt Coverage Ratio**
+| Chart                        | Purpose                                            |
+|------------------------------|-----------------------------------------------------|
+| 1. CCP & LTD by Company      | Cash vs Debt trends over time                      |
+| 2. Debt Coverage Ratio       | How many times cash covers debt (>1 = safe)        |
+| 3. Financial Resilience Heatmap | Color-coded strength across companies & quarters |
+| 4. Debt vs Liquid Assets     | Bubble chart — position & size reveal risk level   |
 
-All charts are interactive. You can zoom, hover, export, or toggle lines with one click.
+All charts support zoom, hover, export, and double-click to reset.
 
 
+
+---
+
+#### Live API Endpoints
+
+| Endpoint           | Method | Returns                     |
+|--------------------|--------|-----------------------------|
+| `/api/charts`      | GET    | All 4 Plotly JSON charts    |
+| `/health`          | GET    | Server + DB status          |
+
+Test: `curl https://financial-dashboard-project-l853.onrender.com/api/charts`
 
 ---
 
@@ -192,8 +207,8 @@ Runs at: "http://localhost:3000"
 
  JWT_SECRET_KEY         96d76fa... 
 
-
 ```
+**No .env needed locally (uses cloud defaults).**
 
 
 ### 🗄️ Database (MongoDB Atlas - Cloud)
@@ -286,19 +301,19 @@ Tableau
 
 1. CCP & LTD by Company
    
- <img src="docs\screenshots\Frontend\fig1_CCP_and_Ltd_by_Company.png" alt="Dashboard" width="600">
+ <img src="docs\screenshots\Dashboard-Screenshot\CCP_AND_LTD_BY_Company.png" alt="Dashboard" width="600">
    
 2. Debt Coverage Ratio
    
- <img src="docs\screenshots\Frontend\fig2_Ration_CCP_LTD_By_Companies.png" alt="Dashboard" width="600">
+ <img src="docs\screenshots\Dashboard-Screenshot\Debt_coverage_Ratio.png" alt="Dashboard" width="600">
    
 3. Financial Resilience Heatmap
    
-   <img src="docs\screenshots\Frontend\fig3_Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
+   <img src="docs\screenshots\Dashboard-Screenshot\Financial_Resilience_Heatmap.png" alt="Dashboard" width="600">
 
 4. Debt vs Liquid Assets (all)
    
-   <img src="docs\screenshots\Frontend\fig4_Dept_VS_Liquid_Assets.png" alt="Dashboard" width="600">
+   <img src="docs\screenshots\Dashboard-Screenshot\Dept_vs_Liquid-Assets.png" alt="Dashboard" width="600">
 
 #### 🔗 Links
 
@@ -322,7 +337,7 @@ Even though the system is public, the backend is protected at server level:
 1. Company dropdown selector
 2. Quarter/year filter
 3. Export entire dashboard to PDF
-4. Dark mode toggle
+4. Real-time data updates
 
 
 #### 🚀 Developer Quickstart
