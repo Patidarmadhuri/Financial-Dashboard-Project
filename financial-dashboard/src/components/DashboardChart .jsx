@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Plot from 'react-plotly.js';
 
+const LoadingSpinner = () => (
+  <div className="flex justify-center items-center py-32">
+    <div className="w-14 h-14 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
+
 const DashboardChart = () => {
   const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
   const [charts, setCharts] = useState({});
@@ -32,25 +38,33 @@ const DashboardChart = () => {
     { title: tab4Title, short: "Bubble size = coverage strength • Position = risk level" }
   ];
 
+  // RONIS FEEDBACK 100% IMPLEMENTED
   const explanations = [
-    "Solid line = Cash • Dashed line = Debt\nWidening gap = getting stronger\nUse dropdown to show only cash or debt",
-    "Cash ÷ Debt = Coverage Ratio\n>1 = Safe • <0.5 = Risk zone\nGreen = Strong • Red = Danger",
-    "Cool color (green) = financially strong\nWarm colors (yellow/red) = stress periods\nSee who improved over time",
-    "Bottom-right = Bulletproof (high cash, low debt)\nTop-left = High risk\nBubble size = coverage power\nRed/blue lines = medians"
+    // Plot 1
+    "Solid line = Cash reserves (CCP) • Dashed line = Long-term debt (LTD)\nA wider gap between CCP and LTD lines indicates increased financial resilience (see plots 2–4 for details).\nUse the dropdown to view cash only, debt only, or both.\nDouble-click anywhere to reset zoom.",
+
+    // Plot 2
+    "Cash / Debt Coverage Ratio: Measures how many times current cash can cover long-term debt — a key indicator of financial safety.\nGreen (>1): High resilience – cash easily covers debt\nLight green (0.5–1): Moderate coverage\nYellow (0.2–0.5): Elevated risk\nRed (<0.2): High vulnerability – insufficient cash buffer\nDouble-click to reset zoom.",
+
+    // Plot 3
+    "Cool colors (top of legend) = High resilience\nWarm colors (bottom of legend) = High risk / stress periods\nTrack which companies improved over time (colors getting cooler) or weakened (colors getting warmer).\nDouble-click to reset zoom.",
+
+    // Plot 4
+    "Bottom-right = High resilience (high cash, low debt)\nTop-left = High risk (low cash, high debt)\nBubble size = Coverage ratio (larger = stronger coverage)\nRed dashed line = Median cash (CCP) across companies\nBlue dashed line = Median debt (LTD) across companies\nDouble-click to reset zoom."
   ];
 
-  if (loading) return <div className="text-center py-32 text-3xl text-gray-600 font-light">Loading dashboard...</div>;
+  if (loading) return <LoadingSpinner />;
   if (error) return <div className="text-center py-32 text-red-600 text-xl">{error}</div>;
 
   const currentChart = charts[`chart${activeTab}`];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-10 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 py-8 px-4 sm:px-6 md:px-10">
 
-      {/* FINAL HERO SECTION – PERFECT 2026 STYLE */}
+      {/* HERO SECTION */}
       <div className="text-center max-w-5xl mx-auto mb-20">
         <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-700 mb-10">
-          Financial Dashboard
+          Financial Resilience
         </h1>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -77,7 +91,6 @@ const DashboardChart = () => {
           </div>
         </div>
 
-        {/* ONE-LINE PROJECT DESCRIPTION */}
         <div className="mt-12">
           <p className="text-xl md:text-2xl font-medium text-slate-700 max-w-4xl mx-auto leading-relaxed">
             Instantly compare <span className="font-bold text-blue-600">cash reserves vs long-term debt</span> of major companies across quarters — see who’s <span className="text-green-500 font-bold">bulletproof</span> and who’s <span className="text-red-500 font-bold">at risk</span> in the next crisis.
@@ -102,13 +115,12 @@ const DashboardChart = () => {
         ))}
       </div>
 
-      {/* Short tagline */}
       <p className="text-center text-2xl font-medium text-slate-700 mb-12 max-w-4xl mx-auto">
         {tabs[activeTab].short}
       </p>
 
       {/* Main Chart */}
-      <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-7xl mx-auto border border-gray-200">
+      <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-6 sm:p-10 max-w-full sm:max-w-7xl mx-auto border border-gray-200 overflow-x-auto">
         <Plot
           data={currentChart.data}
           layout={{
@@ -118,11 +130,14 @@ const DashboardChart = () => {
             title: {
               text: currentChart.layout?.title?.text || '',
               font: { size: 26, color: '#1e293b' },
-              x: 0.5, y: 0.89, xanchor: 'center', yanchor: 'top'
-            }
+              x: 0.5,
+              y: 0.89,
+              xanchor: 'center',
+              yanchor: 'top',
+            },
           }}
           config={{ responsive: true, displayModeBar: true, displaylogo: false }}
-          style={{ width: '100%' }}
+          style={{ minWidth: 600, width: '100%' }}
           onRelayout={(ed) => {
             if (activeTab === 3 && ed?.["title.text"]) {
               const text = ed["title.text"];
@@ -132,7 +147,7 @@ const DashboardChart = () => {
           }}
         />
 
-        {/* Explanation */}
+        {/* Updated Explanation Box */}
         <div className="mt-12 p-10 bg-gradient-to-r from-slate-50 to-indigo-50 rounded-3xl border-l-8 border-indigo-600">
           <h3 className="text-3xl font-bold text-slate-800 mb-6">How to read this chart</h3>
           <p className="text-xl text-slate-700 leading-relaxed whitespace-pre-line">
@@ -141,7 +156,6 @@ const DashboardChart = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="text-center mt-20 text-gray-600 text-lg">
         Built by <span className="font-bold text-blue-600">Madhuri Patidar</span> • Full-Stack Developer • 2025
       </div>
