@@ -38,19 +38,19 @@ const DashboardChart = () => {
     { title: tab4Title, short: "Bubble size = coverage strength • Position = risk level" }
   ];
 
-  // RONIS FEEDBACK 100% IMPLEMENTED
+  // RONIS FEEDBACK 100% IMPLEMENTED – Clear double-click instruction added
   const explanations = [
     // Plot 1
-    "Solid line = Cash reserves (CCP) • Dashed line = Long-term debt (LTD)\nA wider gap between CCP and LTD lines indicates increased financial resilience (see plots 2–4 for details).\nUse the dropdown to view cash only, debt only, or both.\nDouble-click anywhere to reset zoom.",
+    "Solid line = Cash reserves (CCP) • Dashed line = Long-term debt (LTD)\nA wider gap between CCP and LTD lines indicates increased financial resilience (see plots 2–4 for details).\nUse the dropdown to view cash only, debt only, or both.\n\nTip: Double-click any company (e.g. AAPL) in the legend to see only that company.\nDouble-click again (or on empty space) to show all companies.",
 
     // Plot 2
-    "Cash / Debt Coverage Ratio: Measures how many times current cash can cover long-term debt — a key indicator of financial safety.\nGreen (>1): High resilience – cash easily covers debt\nLight green (0.5–1): Moderate coverage\nYellow (0.2–0.5): Elevated risk\nRed (<0.2): High vulnerability – insufficient cash buffer\nDouble-click to reset zoom.",
+    "Cash / Debt Coverage Ratio: Measures how many times current cash can cover long-term debt — a key indicator of financial safety.\nGreen (>1): High resilience – cash easily covers debt\nLight green (0.5–1): Moderate coverage\nYellow (0.2–0.5): Elevated risk\nRed (<0.2): High vulnerability – insufficient cash buffer\n\nTip: Double-click a company in the legend to focus only on it.\nDouble-click again to show all companies.",
 
     // Plot 3
-    "Cool colors (top of legend) = High resilience\nWarm colors (bottom of legend) = High risk / stress periods\nTrack which companies improved over time (colors getting cooler) or weakened (colors getting warmer).\nDouble-click to reset zoom.",
+    "Cool colors (top of legend) = High resilience\nWarm colors (bottom of legend) = High risk / stress periods\nTrack which companies improved over time (colors getting cooler) or weakened (colors getting warmer).\n\nTip: Double-click any company in the legend to isolate it.\nDouble-click again to show all companies.",
 
     // Plot 4
-    "Bottom-right = High resilience (high cash, low debt)\nTop-left = High risk (low cash, high debt)\nBubble size = Coverage ratio (larger = stronger coverage)\nRed dashed line = Median cash (CCP) across companies\nBlue dashed line = Median debt (LTD) across companies\nDouble-click to reset zoom."
+    "Bottom-right = High resilience (high cash, low debt)\nTop-left = High risk (low cash, high debt)\nBubble size = Coverage ratio (larger = stronger coverage)\nRed dashed line = Median cash (CCP) across companies\nBlue dashed line = Median debt (LTD) across companies\n\nTip: Double-click any bubble or legend entry to view only that company.\nDouble-click again to show all companies."
   ];
 
   if (loading) return <LoadingSpinner />;
@@ -147,7 +147,7 @@ const DashboardChart = () => {
           }}
         />
 
-        {/* Updated Explanation Box */}
+        {/* Explanation Box – Now with clear double-click tip */}
         <div className="mt-12 p-10 bg-gradient-to-r from-slate-50 to-indigo-50 rounded-3xl border-l-8 border-indigo-600">
           <h3 className="text-3xl font-bold text-slate-800 mb-6">How to read this chart</h3>
           <p className="text-xl text-slate-700 leading-relaxed whitespace-pre-line">
