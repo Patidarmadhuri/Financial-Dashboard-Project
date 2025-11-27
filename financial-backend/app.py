@@ -63,7 +63,6 @@ def login():
     return jsonify({"error": "Invalid username or password"}), 401
 
 
-# Example protected route (optional – just to prove auth works)
 @app.route("/api/protected")
 @jwt_required()
 def protected():
@@ -71,16 +70,9 @@ def protected():
     return jsonify({"message": f"Hello {current_user}! This is a protected endpoint."})
 
 
-# === YOUR ORIGINAL ENDPOINTS (unchanged) ===
 @app.route("/")
 def home():
     return jsonify({"message": "Financial Dashboard API - LIVE", "endpoints": ["/api/charts", "/api/register", "/api/login"]})
-
-
-def _matches_quarter_in_name(name: str, quarter_lower: str) -> bool:
-    if not name or not isinstance(name, str):
-        return False
-    return quarter_lower in name.lower()
 
 
 @app.route('/api/charts', methods=['GET'])
@@ -111,7 +103,8 @@ def get_charts():
                 else:
                     filtered_traces = [tr for tr in filtered_traces if tr.get("name") and quarter_lower in tr.get("name", "").lower()]
 
-            if idx == 3:  # 4th chart title update
+            # Update chart title for 4th chart
+            if idx == 3:
                 new_title = "Debt vs Liquid Assets"
                 if use_quarter:
                     new_title += f": {quarter}" if not use_median else ": Median Across Quarters"
@@ -119,6 +112,12 @@ def get_charts():
                     layout["title"]["text"] = new_title
                 else:
                     layout["title"] = {"text": new_title}
+
+            # THIS IS THE IMPORTANT PART: Set yaxis title as object for Plotly to show properly
+            if "yaxis" in layout:
+                layout["yaxis"]["title"] = {"text": "USD (millions)"}
+            else:
+                layout["yaxis"] = {"title": {"text": "USD (millions)"}}
 
             charts[f"chart{idx}"] = {
                 "data": filtered_traces,
